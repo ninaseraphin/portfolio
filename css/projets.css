@@ -1,3 +1,22 @@
+/* POINTS*/
+.points{
+    /* position: fixed; */
+    /* top:50%; */
+    /* margin-top:-168px; */
+    grid-area: 5 / 1 / 9 /2;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.cercle{
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #1979AF;
+    margin-bottom:30px;
+}
+
 /* CONTENU */
 .type{
     font-size: 18px;
@@ -32,12 +51,39 @@ body{
 header{
     grid-area:1 / 1 / 2 / 9;
 }
+.container-projets{
+    grid-area: 3 / 2 / 11 / 8;
+    /* display:grid; */
+    /* grid-template-rows: repeat(8, 1fr); */
+    /* grid-gap:20px; */
+    /* transform: translate3d(0px, -900px, 0px); */
+    /* z-index:1; */
+    display: flex;
+    position: relative;
+}
 .unProjet{
-    grid-area: 3 / 3 / 11 / 8;
+    /* grid-area: 3 / 2 / 11 / 8; */
     display:grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(8, 1fr);
     grid-gap:20px 50px;
+    width:100%;
+    height: 100%;
+}
+.unProjet-container.select{
+    opacity: 1;
+}
+
+.unProjet-container{
+    /* min-height: 900px; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* margin-bottom: 200px; */
+    position:absolute;
+    width:100%;
+    height: 100%;
+    opacity: 0;
 }
 .contenu{
     grid-area: 1 / 2 / 9 / 7;
@@ -55,4 +101,10 @@ header{
 .image{
     background-color:grey;
     grid-area: 2 / 1 / 8 / 3;
+}
+.flechedouble{
+    /* grid-area: 4 / 11 / 6 / 13;  */
+    grid-area: 11 / 4 / 13 / 6; 
+    justify-self: center;
+    align-self:center;
 }
