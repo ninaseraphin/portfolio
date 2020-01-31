@@ -1,0 +1,23 @@
+body{
+    margin:0;
+}
+.nom-intro, .nom-intro2{
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    font-size: 5.5em;
+    position: absolute;
+    top:50%;
+    left:25%;
+    margin:0;
+    transform-origin: 0 0;
+    color:white
+}
+.nom-intro2{
+    color:lightgrey;
+}
+.fond-colore{
+    width:100%;
+    height:100vh;
+    background-color: #EF5942;
+    transform-origin: 0 0;
+}
