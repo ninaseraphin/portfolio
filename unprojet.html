@@ -7,13 +7,15 @@
     <title>Portfolio Nina Seraphin - projets</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/test.css">
+    <link rel="stylesheet" type="text/css" href="css/settings.css">
     <link rel="stylesheet" type="text/css" href="css/generic.css">
     <link rel="stylesheet" type="text/css" href="css/elements.css">
     <link rel="stylesheet" type="text/css" href="css/projet.css">
     <script src="js/menu.js" type="text/javascript" async=""></script>
+    <script src="js/scrollTop.js" type="text/javascript" async=""></script>
 </head>
 <body>
-    <header>
+    <header id="top">
         <a class="logo" href="index.html">
             <img class="img-logo"src="assets/logoPortfolio2-02.svg" >
         </a>
@@ -35,28 +37,31 @@
         </nav>
     </header>
     <div class="container">
-        <section class="unProjet">
-            <section class="contenu">
-                <div class="texte">
-                    <h2 class="titre">Titre projet</h2>
-                    <p class="description">But du projet blablabl.... But du projet blablabl.... But du projet blablabl.... But du projet blablabl.... But du projet blablabl.... But du projet blablabl.... 
-                    </p>
-                </div>
-            </section>
-            <div class="image"></div>
-        </section>
+        <div class=un-projet-container>
+                <section class="un-projet">
+                        <section class="contenu">
+                            <div class="texte">
+                                <h2 class="titre">Titre projet</h2>
+                                <p class="description">But du projet blablabl.... But du projet blablabl.... But du projet blablabl.... But du projet blablabl.... But du projet blablabl.... But du projet blablabl.... 
+                                </p>
+                            </div>
+                        </section>
+                        <div class="image"></div>
+                    </section>
+        </div>
+        
         <section class="props">
             <article class="proprietes">
-                <p>Domaine</p>
-                <p>UI - UX</p>
+                <p class="titre-props">Domaine</p>
+                <p class="reponse">UI - UX</p>
             </article>
             <article class="proprietes">
-                <p>Contexte</p>
-                <p>Scolaire</p>
+                <p class="titre-props">Contexte</p>
+                <p class="reponse">Scolaire</p>
             </article>
             <article class="proprietes">
-                <p>Année</p>
-                <p>2018</p>
+                <p class="titre-props">Année</p>
+                <p class="reponse">2018</p>
             </article>
         </section>
         <div class="image-projet"></div>
@@ -64,7 +69,9 @@
         <div class="image-projet small"></div>
         <div class="image-projet"></div>
     </div>
-    <img class="fleche-retour" src="assets/flecheretour.svg" style="height:50px">
-    
+    <section class="retour">
+        <img class="fleche-retour" src="assets/flecheretour.svg" style="height:50px">
+    </section>
+
 </body>
 </html>
