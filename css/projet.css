@@ -22,6 +22,7 @@ html{
     /* width: 100vw;
     height: 100vh; */
 }
+
 .un-projet{
     grid-area: 3 / 2 / 11 / 8;
     display:grid;
@@ -92,4 +93,95 @@ html{
     justify-content: center;
     align-items: center;
     padding:25px;
+}
+
+ @media (max-width: 699px) {
+     .un-projet-container{
+         height: calc(80vh -  73px);
+     }
+    .image{
+        display:none;
+    }
+    .contenu{
+        grid-area: 1 / 1 / 9 / 7;
+    }
+    .description{
+        font-size: 12px;
+    }
+    .titre{
+        font-size: 36px;
+    }
+    .titre-props{
+        font-size: 14px;
+    }
+    .reponse{
+        font-size: 24px;
+    }  
+    .props{
+        flex-direction: column;
+        align-items: center;
+    }
+    .proprietes{
+        margin: 25px 0;
+        text-align: center;
+    }
+    .small{
+        width:100%;
+    }
+
+}
+@media (min-width:700px) and (max-width:799px){
+    .un-projet-container, .un-projet{
+        grid-gap:20px;
+        height: auto;
+    }
+    .description{
+        font-size: 16px;
+    }
+    .titre{
+        font-size: 54px;
+    }
+    .titre-props{
+        font-size: 16px;
+    }
+    .reponse{
+        font-size: 26px;
+    }  
+}
+
+
+@media (min-width:800px) and (max-width:999px){
+    .un-projet-container, .un-projet{
+        grid-gap:20px;
+    }
+    .description{
+        font-size: 16px;
+    }
+    .titre{
+        font-size: 54px;
+    }
+    .titre-props{
+        font-size: 16px;
+    }
+    .reponse{
+        font-size: 26px;
+    }  
+}
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+    .un-projet-container, .un-projet{
+        grid-gap:20px;
+    }
+    .description{
+        font-size: 16px;
+    }
+    .titre{
+        font-size: 54px;
+    }
+    .titre-props{
+        font-size: 16px;
+    }
+    .reponse{
+        font-size: 26px;
+    }  
 }
