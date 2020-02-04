@@ -19,6 +19,7 @@ window.addEventListener("load", function(){
     //         swatch.style.backgroundColor=col;
     //     }
     // }
+    
     let col0= document.querySelector(".couleur.n0").getAttribute("fill");
     let col1= document.querySelector(".couleur.n1").getAttribute("fill");
     let col2= document.querySelector(".couleur.n2").getAttribute("fill");
