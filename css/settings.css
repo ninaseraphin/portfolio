@@ -5,3 +5,7 @@
     --color-corail: #EF5942;
     --color-rose: #F5AFBE;
   }
+  body, html{
+    overflow-x:hidden;
+    max-width:100vw;
+  }
