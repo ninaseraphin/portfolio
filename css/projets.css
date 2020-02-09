@@ -22,6 +22,7 @@
     font-size: 18px;
     font-weight: 500;
     color: #1979AF;
+    text-transform: uppercase;
 }
 .titre{
     font-size: 96px;
@@ -102,7 +103,7 @@ header{
     background-color:grey;
     grid-area: 2 / 1 / 8 / 3;
 }
-.flechedouble{
+.retour{
     /* grid-area: 4 / 11 / 6 / 13;  */
     grid-area: 11 / 4 / 13 / 6; 
     justify-self: center;
@@ -112,4 +113,77 @@ header{
 /* Couleur arrière plan projets*/
 #projet2 .contenu{
     background-color: var(--color-jaune);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 699px) {
+    .points{
+        display: none;
+    }
+   body{
+       display: block;
+    /* grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 20px; */
+   }
+   .container-projets{
+    /* grid-area: 3 / 1 / 8 / 7; */
+    display: flex;
+    flex-direction: column;
+   }
+   .unProjet-container{
+       opacity:1;
+       position: inherit;
+       min-height: 80vh;
+       margin: 25px 0 50px;
+   }
+   .retour{
+       position: fixed;
+       top: calc(100vh - 40px);
+       width:100vw;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: white;
+   }
+   header{
+    grid-area:1 / 1 / 2 / 8;
+    }
+    .unProjet{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap:20px;
+        min-height:100%;
+        height:auto;
+    }
+    .contenu{
+        grid-area:1 / 2 / 5 / 6;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap:20px;
+    }
+    .image{
+        grid-area:2 / 1 / 6 / 4;
+    }
+    .texte{
+        grid-area: 2 / 4 / 6 / 6;
+        justify-content: space-around;
+    }
+    .description{
+        font-size: 16px;
+        display: none;
+    }
+    .titre{
+        font-size: 36px;
+    }
+    .type{
+        font-size: 10px;
+    }
+}
+
+
+@media (min-width:700px) and (max-width:799px){
+
 }
