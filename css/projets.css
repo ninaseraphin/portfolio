@@ -19,18 +19,18 @@
 
 /* CONTENU */
 .type{
-    font-size: 18px;
-    font-weight: 500;
+    /* font-size: 18px;
+    font-weight: 500; */
     color: #1979AF;
     text-transform: uppercase;
 }
-.titre{
-    font-size: 96px;
+/* .titre{
+    font-size: 96px;l;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;ppppppppppppppppppppppppppppppppppppppppppppppppppppppp
     font-weight: 300;
-}
-.description{
+} */
+/* .description{
     font-size: 24px;
-}
+} */
 .titre, .description{
     color: white;
 }

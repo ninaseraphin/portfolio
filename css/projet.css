@@ -63,13 +63,13 @@ html{
     text-transform: uppercase;
     margin-bottom:25px;
 }
-.titre{
+/* .titre{
     font-size: 96px;
     font-weight: 300;
-}
-.description{
+} */
+/* .description{
     font-size: 24px;
-}
+} */
 .reponse{
     color: white;
     font-size: 30px;
@@ -105,7 +105,7 @@ html{
     .contenu{
         grid-area: 1 / 1 / 9 / 7;
     }
-    .description{
+    /* .description{
         font-size: 12px;
     }
     .titre{
@@ -113,7 +113,7 @@ html{
     }
     .titre-props{
         font-size: 14px;
-    }
+    } */
     .reponse{
         font-size: 24px;
     }  
@@ -136,7 +136,7 @@ html{
         grid-gap:20px;
         height: auto;
     }
-    .description{
+    /* .description{
         font-size: 16px;
     }
     .titre{
@@ -144,7 +144,7 @@ html{
     }
     .titre-props{
         font-size: 16px;
-    }
+    } */
     .reponse{
         font-size: 26px;
     }  
@@ -155,7 +155,7 @@ html{
     .un-projet-container, .un-projet{
         grid-gap:20px;
     }
-    .description{
+    /* .description{
         font-size: 16px;
     }
     .titre{
@@ -163,7 +163,7 @@ html{
     }
     .titre-props{
         font-size: 16px;
-    }
+    } */
     .reponse{
         font-size: 26px;
     }  
@@ -173,7 +173,7 @@ html{
     .un-projet-container, .un-projet{
         grid-gap:20px;
     }
-    .description{
+    /* .description{
         font-size: 16px;
     }
     .titre{
@@ -181,7 +181,7 @@ html{
     }
     .titre-props{
         font-size: 16px;
-    }
+    } */
     .reponse{
         font-size: 26px;
     }  

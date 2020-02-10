@@ -29,7 +29,7 @@ header{
 }
 .nav-item{
     margin:0 2rem;
-    font-size:18px;
+    /* font-size:18px; */
 }
 .en a{
     color:#1979AF;

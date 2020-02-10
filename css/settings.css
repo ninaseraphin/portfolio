@@ -1,11 +1,15 @@
 :root {
+
+  /*  COULEURS  */
     --color-vert: #CCE5CC;
     --color-jaune: #F8C92B;
     --color-bleu: #1979AF;
     --color-corail: #EF5942;
     --color-rose: #F5AFBE;
-  }
-  body, html{
-    overflow-x:hidden;
-    max-width:100vw;
+
+  /*  MARGIN / PADDING  */
+    --space-base: 25px;
+    --space-double: 50px;
+
+    
   }
