@@ -47,7 +47,7 @@ body{
     grid-gap: 20px 50px;
     align-content: stretch;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
 }
 header{
     grid-area:1 / 1 / 2 / 9;
