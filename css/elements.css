@@ -10,14 +10,14 @@ p,a,h1,h2,h3,span, li{
     font-family:'Poppins', sans-serif; 
 }
 
-h1{
+h2,h1{
     font-size: 96px;
     font-weight: 300;
 }
 p{
     font-size: 24px;
 }
-h2{
+h3{
     font-size: 18px;
     font-weight: 500;
 }
