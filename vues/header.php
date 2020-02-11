@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +10,21 @@
     <link rel="stylesheet" type="text/css" href="css/generic.css">
     <link rel="stylesheet" type="text/css" href="css/elements.css">
     <link rel="stylesheet" type="text/css" href="css/settings.css">
-    <script src="js/menu.js" type="text/javascript" async=""></script>
+    <link rel="stylesheet" type="text/css" href="css/intro.css">
+    <link rel="stylesheet" type="text/css" href="css/apropos.css">
+    <link rel="stylesheet" type="text/css" href="css/projet.css">
+    <link rel="stylesheet" type="text/css" href="css/projets.css">
+
+    <?php
+        //ici, mettre les fichiers JS et CSS en fonction de la page loadee
+    ?>
     <script src="js/menu.js" type="text/javascript" async=""></script>
     <script src="js/video.js" type="text/javascript" async=""></script>
+    <script src="js/intro.js" type="text/javascript" async=""></script>
+    <script src="js/scrollTop.js" type="text/javascript" async=""></script>
 </head>
 <body>
-    <header>
+<header>
         <a class="logo" href="index.html">
             <img class="img-logo"src="assets/logoPortfolio2-02.svg" >
         </a>
@@ -23,7 +32,7 @@
             <ul class="nav-list">
                 <li class="nav-item"><a href=projets.html>Projets</a></li>
                 <li class="nav-item"><a href="apropos.html">À propos</a></li>
-                <li class="nav-item en"><a>EN</a></li>
+                <!-- <li class="nav-item en"><a>EN</a></li> -->
             </ul>
         </nav>
         <nav class="nav-phone">
@@ -32,11 +41,7 @@
             <ul class="nav-list-phone hide">
                 <li class="nav-item"><a href=projets.html>Projets</a></li>
                 <li class="nav-item"><a href="apropos.html">À propos</a></li>
-                <li class="nav-item en"><a>EN</a></li>
+                <!-- <li class="nav-item en"><a>EN</a></li> -->
             </ul>
         </nav>
     </header>
-    <video playsinline="" autoplay="" muted="" preload="" loop="" src="assets/TP2.mp4" ></video>
-    
-</body>
-</html>
