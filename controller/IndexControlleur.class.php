@@ -35,18 +35,13 @@ class IndexControlleur extends Controlleur{
 				             
                 break;                  
 				case "apropos":
-					$page="apropos";
-					$crs = new AuthentificationControlleur();
-					if($action == "liste")   $crs->listeAction();
-					if($action == "ajouter") $crs->ajouterAction();
-					if($action == "supprimer") $crs->supprimerAction();
-					if($action == "modifier") $crs->modifierAction();				             
-					if($action == "connexion") $crs->connexionAction();				             
-					if($action == "connexionPost") $crs->connexionPostAction();				             
+					$this->vue->afficherHeader("apropos");
+					$this->vue->afficherpageAPropos();  			             
                 break;                  
                                 
-                default:
-					$this->vue->afficherPageAccueil();
+				default:
+					$this->vue->afficherHeader("accueil");
+					$this->vue->afficherpageAccueil();  
                 break;
         }    
 	}

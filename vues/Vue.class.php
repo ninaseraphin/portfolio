@@ -15,7 +15,9 @@ class Vue{
         $_SESSION['projet'] = $liste;
         $_SESSION['medias'] = $listeMedias;
         require  "projet.html.php"; 
-
+    }
+    public function afficherPageAPropos(){
+        require  "apropos.html.php"; 
     }
     public function afficherHeader($page){
         include "header.php";
