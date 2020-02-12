@@ -48,6 +48,7 @@ video{
  @media (max-width: 699px) {
     .nav-phone{
         display: flex;
+        z-index:15;
     }
     .nav-desktop{
         display:none;
