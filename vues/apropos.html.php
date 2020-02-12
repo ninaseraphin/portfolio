@@ -1,10 +1,10 @@
 <div class="container">
         <section class="texte">
-            <p>Finissante du DEC Intégration Multimédia.... texte de présentation parcours/ personne à définir.
-                    blablablablab;abla fkjhsdgds fdskjgds gfdsjgf; fdsjhfd fdsfd idsyfoew wieif.</p>
+            <p>Mes projets vous ont plu, n'hésitez pas à me contacter pour tout projet, collaboration ou tout simplement pour en savoir plus sur mon profil.</p>
         </section>
         <div class="fond"></div>
-        <div class="image"></div>
+        <!-- <div class="image"></div> -->
+        <img class="image"src="./assets/nina.jpg" alt="Portrait de Femme avec ambiance bleuté">
         <section class="contact">
             <a href="mailto:seraphinnina@gmail.com" class="media">
                 <div class="icone corail"></div>
