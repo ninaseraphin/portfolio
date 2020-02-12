@@ -13,7 +13,7 @@ window.addEventListener("load", function(){
         }else{
         if(window.innerWidth > 800 && video.src !== "./assets/accueil-video.mp4" ){
             console.log(video.src);
-            video.setAttribute('src', "./assets/TP2.mp4");
+            video.setAttribute('src', "./assets/accueil-video.mp4");
         }
     }
     }

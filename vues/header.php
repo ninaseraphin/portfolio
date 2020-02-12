@@ -38,7 +38,7 @@
         <?php
     }else{
         ?>
-
+        <script src="<?php echo($debut)?>js/video.js" type="text/javascript" async=""></script>
         <?php
     }
     ?>
@@ -49,12 +49,12 @@
     ?>
     <script src="<?php echo($debut)?>js/menu.js" type="text/javascript" async=""></script>
     
-    <script src="<?php echo($debut)?>js/intro.js" type="text/javascript" async=""></script>
+    
     
 </head>
 <body>
 <header>
-        <a class="logo" href="index.html">
+        <a class="logo" href="/portfolio/accueil">
             <img class="img-logo"src="<?php echo($debut)?>assets/logoPortfolio2-02.svg" >
         </a>
         <nav class="nav-desktop">
