@@ -26,6 +26,23 @@ li{
 }
 
 
+/* COULEURS ARRIERE PLAN*/
+.corail{
+    background-color: var(--color-corail);
+}
+.bleu{
+    background-color: var(--color-bleu);
+}
+.rose{
+    background-color: var(--color-rose);
+}
+.vert{
+    background-color: var(--color-vert);
+}
+.jaune{
+    background-color: var(--color-jaune);
+}
+
 @media (max-width: 699px) {
     h1{
         font-size: 36px;

@@ -1,51 +1,5 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio Nina Seraphin - projets</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/settings.css">
-    <link rel="stylesheet" type="text/css" href="css/test.css">
-    <link rel="stylesheet" type="text/css" href="css/generic.css">
-    <link rel="stylesheet" type="text/css" href="css/elements.css">
-    <link rel="stylesheet" type="text/css" href="css/projets.css">
-    <script src="js/menu.js" type="text/javascript" async=""></script>
-    <script src="js/scrollProjets.js" type="text/javascript" async=""></script>
-    <script src="js/slideProjets.js" type="text/javascript" async=""></script>
-</head>
-<body>
-    <header>
-        <a class="logo" href="index.html">
-            <img class="img-logo"src="assets/logoPortfolio2-02.svg" >
-        </a>
-        <nav class="nav-desktop">
-            <ul class="nav-list">
-                <li class="nav-item"><a href=projets.html>Projets</a></li>
-                <li class="nav-item"><a href="apropos.html">À propos</a></li>
-                <li class="nav-item en"><a>EN</a></li>
-            </ul>
-        </nav>
-        <nav class="nav-phone">
-                <img class="burger" src="assets/burger.svg" style="height:20px">
-                <img class="close hide" src="assets/close.svg" style="height:20px">
-            <ul class="nav-list-phone hide">
-                <li class="nav-item"><a href=projets.html>Projets</a></li>
-                <li class="nav-item"><a href="apropos.html">À propos</a></li>
-                <li class="nav-item en"><a>EN</a></li>
-            </ul>
-        </nav>
-    </header> -->
-<!-- TEST -->
-
-
 <?php
 $tab =  $_SESSION['liste'];
-// foreach($tab as $projet){
-//     echo $projet["Nom"];
-// }
-
 ?>
 <main>
     <section class ="points">
@@ -72,7 +26,7 @@ $tab =  $_SESSION['liste'];
                 echo('" data-id="'.$projet["Id"].'">')
                 ?>
                 <div class="unProjet" > 
-                <section class="contenu">
+                <section class="contenu <?php echo $projet['Couleur']?>">
                     <div class="texte">
                         <section>
                         <h3 class="type">
