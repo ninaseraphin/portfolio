@@ -98,6 +98,10 @@ html{
     background-color:grey;
     grid-area: 2 / 1 / 8 / 3;
 }
+.description{
+    font-size:16px;
+    margin-right:20px;
+}
 .props{
     display:flex;
     justify-content: space-around;
@@ -122,7 +126,7 @@ html{
 } */
 .reponse{
     color: white;
-    font-size: 30px;
+    /* font-size: 30px; */
     text-transform: capitalize;   
 }
 .proprietes{

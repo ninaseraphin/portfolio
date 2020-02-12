@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo($debut)?>css/generic.css">
     <link rel="stylesheet" type="text/css" href="<?php echo($debut)?>css/elements.css">
     <link rel="stylesheet" type="text/css" href="<?php echo($debut)?>css/settings.css">
-    <!-- <link rel="stylesheet" type="text/css" href="<?php echo($debut)?>css/intro.css"> -->
+
     <?php
     if($page =="projet"){
         ?>
@@ -38,7 +38,7 @@
         <?php
     }else{
         ?>
-        <script src="<?php echo($debut)?>js/video.js" type="text/javascript" async=""></script>
+
         <?php
     }
     ?>
