@@ -7,13 +7,51 @@
 .illu{
     margin:25px 0;
 }
-
+/*COMPETENCES*/
+.competences{
+    display:flex;
+}
+.competences .reponse{
+    padding-right:25px;
+}
+/* BEFORE/AFTER */
+.autresProjets{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:50%;
+}
+.flechesvg{
+    /* stroke: var(--color-bleu); */
+    stroke: black;
+}
+.navProjet{
+    background-color: white;
+    /* display:flex; */
+    padding: 5px;
+    padding-left:15px;
+    border-radius:2px;
+}
+.navProjet:nth-of-type(2){
+    padding-left:5px;
+    padding-right:15px;
+}
+.fleche-before{
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.legende{
+    /* color: var(--color-bleu); */
+    color: black;
+    font-size:14px;
+}
 /* STRUCTURE PAGE */
 html{
     scroll-behavior: smooth;
 }
 .container{
-    background-color: var(--color-vert);
+    /* background-color: var(--color-vert); */
     padding-bottom: 25px;
     display: flex;
     flex-direction: column;
@@ -50,10 +88,10 @@ html{
     background-color: white;
 }
 .texte{
-    grid-area: 3 / 2 / 7 / 5;
+    grid-area: 2 / 2 / 8 / 6;
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: flex-start;
 }
 .image{
@@ -65,6 +103,8 @@ html{
     justify-content: space-around;
     background-color: var(--color-bleu);
     width:100%;
+    /* border-top: solid 2px white; */
+    /* border-bottom: solid 2px white; */
 }
 .titre-props{
     color: var(--color-vert);

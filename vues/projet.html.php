@@ -1,9 +1,10 @@
     <?php
         $projet=$_SESSION["projet"];
         $images=$_SESSION["medias"];
+        $competences=$_SESSION["competences"];
     ?>
     
-    <div class="container">
+    <div class="container <?php echo $projet["Couleur"]?>">
         <div class=un-projet-container>
                 <section class="un-projet">
                         <section class="contenu">
@@ -39,21 +40,58 @@
                     $class="class='illu'";
                 }
 
-                if(!$img["Principale"]){
+                if(!$img["Principale"]  && $img["Extension"]!== "mp4"){
                     echo '<img '.$class.' src="../assets/'.$img['Nom'].'.'.$img['Extension'].'" alt="'.$img['Alt'].'">';
+                }else if($img["Extension"] == "mp4"){
+                    echo '<video playsinline="" autoplay="" muted="" preload="" loop="" '.$class.' src="../assets/'.$img['Nom'].'.'.$img['Extension'].'" alt="'.$img['Alt'].'"></video>';
                 }
-                
             }
-
         ?>
-
-        <!-- <div class="image-projet"></div>
-        <div class="image-projet small"></div>
-        <div class="image-projet small"></div>
-        <div class="image-projet"></div> -->
+         <section class="props">
+            <section class="proprietes">
+                <h2 class="titre-props">Competences utilisees</h2>
+                <article class="competences">
+                <?php
+                    foreach($competences as $comp){
+                        echo ' <p class="reponse">'.$comp["Nom"].'</p>';
+                    }
+                ?>
+            </article>
+            <section>
+   
+        </section>
     </div>
     <section class="retour">
         <img class="fleche-retour" src="../assets/flecheretour.svg" style="height:50px">
+    </section>
+    <section class="autresProjets">
+        <a class="navProjet" href="<?php 
+        switch($projet["Id"]){
+            case 1 :
+                $projetBefore= 6;
+                $projetAfter= 2;
+            break;
+            case 6:
+                $projetBefore=5;
+                $projetAfter=1;
+            break;
+            default:
+                $projetBefore= $projet["Id"]-1;
+                $projetAfter= $projet["Id"]+1;
+        }
+        echo ($projetBefore);?>">
+       <p class="legende">Precedent</p> <svg class="flechesvg fleche-before" width="54" height="19" viewBox="0 0 54 19" fill="none">
+<path d="M0 9H52" stroke-width="2"/>
+<path d="M52.5 9.5L44 1"  stroke-width="2"/>
+<path d="M52.5 9L44 17.5"  stroke-width="2"/>
+</svg>
+</a>
+        
+        <a class ="navProjet" href="<?php echo ($projetAfter);?>"><p class="legende">Suivant</p><svg class="flechesvg"width="54" height="19" viewBox="0 0 54 19" fill="none">
+<path d="M0 9H52" stroke-width="2"/>
+<path d="M52.5 9.5L44 1"  stroke-width="2"/>
+<path d="M52.5 9L44 17.5"  stroke-width="2"/>
+</svg></a>
     </section>
 
 </body>

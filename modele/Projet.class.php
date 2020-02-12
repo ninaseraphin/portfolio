@@ -45,6 +45,19 @@ class Projet extends Manager {
 		}
 		return $res;   
 	}
+	public function getCompetences($idProjet) 
+	{
+		$res = Array();
+        $query = "select technique.Nom FROM technique INNER JOIN techniqueprojet ON techniqueprojet.IdTechnique= technique.Id INNER JOIN projet ON projet.Id = techniqueprojet.IdProjet WHERE projet.Id=".$idProjet.";";
+		if($mrResultat = $this->_connexion->query($query))
+		{
+			while($comp = $mrResultat->fetch_assoc())
+			{
+				$res[] = $comp;
+			}
+		}
+		return $res;   
+	}
 	public function getProjet($idProjet) 
 	{
 		$res = Array();

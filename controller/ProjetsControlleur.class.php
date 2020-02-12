@@ -23,9 +23,10 @@ class ProjetsControlleur extends Controlleur
         $projet=array();
         $projet=$this->getProjet($id);
         $medias=$this->getMedias($id);
+        $competences=$this->getCompetences($id);
 		$oVue = new Vue();
         $oVue->afficherHeader("projet");	
-        $oVue->afficherPageProjet($projet, $medias);
+        $oVue->afficherPageProjet($projet, $medias, $competences);
     }
     
     
@@ -44,8 +45,14 @@ class ProjetsControlleur extends Controlleur
     protected function getMedias($id)
     {
         $oProjet= new Projet();
-        $aProjet = $oProjet->getMedias($id);
-        return $aProjet;
+        $aMedias = $oProjet->getMedias($id);
+        return $aMedias;
+    }
+    protected function getCompetences($id)
+    {
+        $oProjet= new Projet();
+        $aCompetences = $oProjet->getCompetences($id);
+        return $aCompetences;
     }
 	
 }

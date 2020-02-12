@@ -11,9 +11,10 @@ class Vue{
         require  "projets.html.php"; 
 
     }
-    public function afficherPageProjet($liste, $listeMedias){
+    public function afficherPageProjet($liste, $listeMedias, $listeCompetences){
         $_SESSION['projet'] = $liste;
         $_SESSION['medias'] = $listeMedias;
+        $_SESSION['competences'] = $listeCompetences;
         require  "projet.html.php"; 
     }
     public function afficherPageAPropos(){
