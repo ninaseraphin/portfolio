@@ -3,7 +3,7 @@ window.addEventListener("load", function(){
 
         duration: 600,
         easing: "easeInOutQuad",
-        autoplay:true,
+        autoplay:false,
         direction:"alternate",
         loop: true,
     });
@@ -41,5 +41,10 @@ window.addEventListener("load", function(){
         d:"M30.877,30.02c0,0,12.576,4.444,15.629,2.097c1.053-0.809,0.507-4.608-0.981-6.576c-1.486-1.967-5.913-4.214-8.433-6.011C34.571,17.733,26.755,23.734,30.877,30.02z",
     }, "-=450")
 
+
+    var seekProgressEl = document.querySelector('.progress');
+    seekProgressEl.oninput = function() {
+      flower.seek(flower.duration * (seekProgressEl.value / 100));
+    };
 
 });

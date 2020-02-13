@@ -1,8 +1,7 @@
 <?php
-
 class Connexion{
-    protected static $connect;
-
+		protected static $connect;
+		
      public function __construct(){
 		 $host_name = 'db5000290828.hosting-data.io'; //'localhost';
 		 $database =  'dbs284114';
@@ -12,8 +11,6 @@ class Connexion{
 		 self::$connect->set_charset("utf8");
 		 if (mysqli_connect_errno()) {
 			die('<p>Failed to connect to MySQL: '.mysqli_connect_error().'</p>');
-		  } else {
-			// echo '<p>Connection to MySQL server successfully established.</p >';
 		  }
     }
 	
@@ -24,12 +21,7 @@ class Connexion{
 			return self::$connect;
 		}else{
 			return self::$connect;
-			
 		}
-		
-		
 	}
-
 }
 
-//$connexion = Connexion::getInstance();

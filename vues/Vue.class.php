@@ -1,15 +1,11 @@
 <?php
 class Vue{
-
-
     public function afficherPageAccueil(){
         require  "accueil.html.php"; 
-
     }
     public function afficherPageProjets($liste){
         $_SESSION['liste'] = $liste;
         require  "projets.html.php"; 
-
     }
     public function afficherPageProjet($liste, $listeMedias, $listeCompetences){
         $_SESSION['projet'] = $liste;
@@ -22,12 +18,7 @@ class Vue{
     }
     public function afficherHeader($page){
         include "header.php";
-
     }
-
-    
-    
-    
 }
 
 ?>

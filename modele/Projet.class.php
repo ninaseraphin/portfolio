@@ -32,6 +32,11 @@ class Projet extends Manager {
 		}
 		return $res;   
 	}
+		/**
+	 * Retourne la liste des médias reliés à un projet
+	 * @access public
+	 * @return Array
+	 */
 	public function getMedias($idProjet) 
 	{
 		$res = Array();
@@ -45,6 +50,11 @@ class Projet extends Manager {
 		}
 		return $res;   
 	}
+	/**
+	 * Retourne la liste des compétences reliées à un projet
+	 * @access public
+	 * @return Array
+	 */
 	public function getCompetences($idProjet) 
 	{
 		$res = Array();
@@ -58,6 +68,11 @@ class Projet extends Manager {
 		}
 		return $res;   
 	}
+	/**
+	 * Retourne les informations d'un projet
+	 * @access public
+	 * @return Array
+	 */
 	public function getProjet($idProjet) 
 	{
 		$res = Array();

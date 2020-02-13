@@ -1,6 +1,49 @@
+h3{
+    text-transform: uppercase;
+    font-size:24px;
+    margin-bottom:15px;
+}
 .projetFinal{
     width:100%;
     background-color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projetFinal>section{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin : 50px 0;
+    min-height:50vh;
+}
+.morphing, .stagger, .timeline, .couleurs, .path{
+    flex-direction: column;
+}
+.secButton{
+    min-width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.button{
+    min-width:100px;
+    height:50px;
+    background-color: #457398;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 0 15px;
+}
+.button p{
+    color: white;
+
+}
+input.progress{
+    color: var(--color-bleu);
 }
 
 .props.blanc{
