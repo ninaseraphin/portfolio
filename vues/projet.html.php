@@ -14,11 +14,19 @@
                                 </p>
                             </div>
                         </section>
-                        <div class="image"><img src="<?php echo "../assets/".$images[0]["Nom"]; echo ".".$images[0]["Extension"];?>" alt="<?php echo $images[0]["Alt"]; ?>"></div>
+                        <div class="image">
+                            <?php 
+                                foreach($images as $img){
+                                    if($img["Principale"]){
+                                        echo("<img src='../assets/".$img["Nom"]."' alt='".$img["Alt"]."'>");
+                                    }
+                                }
+                            ?>
+                        </div>
                     </section>
         </div>
         
-        <section class="props">
+        <section class="props <?php  if($projet['Couleur'] =="bleu"){echo('blanc');} ?>">
             <article class="proprietes">
                 <h2 class="titre-props">Domaine</h2 >
                 <p class="reponse"><?php echo $projet["NomType"]?></p>
@@ -46,10 +54,14 @@
                     echo '<video playsinline="" autoplay="" muted="" preload="" loop="" '.$class.' src="../assets/'.$img['Nom'].'.'.$img['Extension'].'" alt="'.$img['Alt'].'"></video>';
                 }
             }
+
+            if($projet["Nom"] == "Motifs"){
+                include("projetFinal.html.php");
+            }
         ?>
          <section class="props">
             <section class="proprietes">
-                <h2 class="titre-props">Competences utilisees</h2>
+                <h2 class="titre-props">Compétences utilisées</h2>
                 <article class="competences">
                 <?php
                     foreach($competences as $comp){
@@ -68,11 +80,11 @@
         <a class="navProjet" href="<?php 
         switch($projet["Id"]){
             case 1 :
-                $projetBefore= 6;
+                $projetBefore= 7;
                 $projetAfter= 2;
             break;
-            case 6:
-                $projetBefore=5;
+            case 7:
+                $projetBefore=6;
                 $projetAfter=1;
             break;
             default:
@@ -80,7 +92,7 @@
                 $projetAfter= $projet["Id"]+1;
         }
         echo ($projetBefore);?>">
-       <p class="legende">Precedent</p> <svg class="flechesvg fleche-before" width="54" height="19" viewBox="0 0 54 19" fill="none">
+       <p class="legende">Précédent</p> <svg class="flechesvg fleche-before" width="54" height="19" viewBox="0 0 54 19" fill="none">
 <path d="M0 9H52" stroke-width="2"/>
 <path d="M52.5 9.5L44 1"  stroke-width="2"/>
 <path d="M52.5 9L44 17.5"  stroke-width="2"/>

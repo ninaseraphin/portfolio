@@ -28,24 +28,24 @@ li{
 
 /* COULEURS ARRIERE PLAN*/
 .corail{
-    background-color: var(--color-corail);
+    background-color: var(--color-corail)!important;
 }
 .bleu{
-    background-color: var(--color-bleu);
+    background-color: var(--color-bleu)!important;
 }
 .rose{
-    background-color: var(--color-rose);
+    background-color: var(--color-rose)!important;
 }
 .vert{
-    background-color: var(--color-vert);
+    background-color: var(--color-vert)!important;
 }
 .jaune{
-    background-color: var(--color-jaune);
+    background-color: var(--color-jaune)!important;
 }
 
 @media (max-width: 699px) {
     h1,h2{
-        font-size: 36px;
+        font-size: 44px;
     }
     p{
         font-size: 12px;

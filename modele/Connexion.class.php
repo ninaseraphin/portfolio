@@ -4,10 +4,10 @@ class Connexion{
     protected static $connect;
 
      public function __construct(){
-		 $host_name = 'localhost'; //'db5000290828.hosting-data.io'
-		 $database = 'dbs284114'; //'dbs284114'
-		 $user_name = 'root'; //'dbu503856'
-		 $password = ''; //'4-Tartines25675'
+		 $host_name = 'db5000290828.hosting-data.io'; //'localhost';
+		 $database =  'dbs284114';
+		 $user_name =  'dbu503856'; //'root';
+		 $password = '4-Tartines25675'; //''
 		 self::$connect = mysqli_connect($host_name, $user_name, $password, $database);
 		 self::$connect->set_charset("utf8");
 		 if (mysqli_connect_errno()) {

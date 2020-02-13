@@ -1,4 +1,8 @@
 /* TEST V2*/
+
+.blanc{
+    color:white!important;
+}
 main{
     display:flex;
 }
@@ -69,8 +73,16 @@ main{
     width: 12px;
     height: 12px;
     border-radius: 6px;
-    background-color: #1979AF;
+    background-color: lightgrey;
     margin-bottom:30px;
+}
+.cercle:hover{
+    transform: scale(1.1);
+    transition: transform 200ms;
+}
+.cercle.bleu, .cercle.vert,.cercle.corail, .cercle.jaune,.cercle.rose{
+    transform: scale(1.2);
+    transition: transform 200ms;
 }
 
 
@@ -155,6 +167,15 @@ header{
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+}
+.fleche{
+    transform-origin: 0% 50%;
+    padding: 20px 20px 20px 0;
+    height:auto;
+}
+.fleche:hover{
+    transform: scaleX(1.2);
+    transition: transform 200ms;
 }
 .image{
     background-color:grey;
@@ -257,5 +278,11 @@ header{
     }
     .description{
         margin-right: 20px;
+    }
+}
+@media (min-width: 2000px) {
+    main{
+        max-width:80%;
+        margin:auto;
     }
 }

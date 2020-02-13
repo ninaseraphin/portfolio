@@ -29,7 +29,7 @@ $tab =  $_SESSION['liste'];
                 <section class="contenu <?php echo $projet['Couleur']?>">
                     <div class="texte">
                         <section>
-                        <h3 class="type">
+                        <h3 class="type <?php if($projet['Couleur'] =="bleu"){echo('blanc');}?>">
                 <?php
                 echo $projet["NomType"];
                 ?>
@@ -45,7 +45,7 @@ $tab =  $_SESSION['liste'];
                 echo $projet["Description"];
                 ?>
                 </p>
-                <a href=<?php echo ('"projet/'.$projet["Id"].'"');?>><img class="fleche" src="./assets/fleche.svg" style="height:20px"></a>
+                <a href=<?php echo ('"projet/'.$projet["Id"].'"');?>><img class="fleche" src="./assets/fleche.svg" ></a>
                     </div>
                 </section>
                 <div class="image">
@@ -55,26 +55,6 @@ $tab =  $_SESSION['liste'];
                 <?php
             }
             ?>
-        </section>
-        
-
-        <!-- <section class="unProjet-container " id="projet1">
-            <div class="unProjet" > 
-                <section class="contenu">
-                    <div class="texte">
-                        <section>
-                                <p class="type">Illustration</p>
-                                <h2 class="titre">Titre projet</h2>
-                        </section>
-                        <p class="description">Courte description du projet en une ou deux phrases.</p>
-                        <a href="unprojet.html"><img class="fleche" src="assets/fleche.svg" style="height:20px"></a>
-                    </div>
-                </section>
-                <div class="image"></div>
-            </div>
-            
-        </section> -->
-
-    
+        </section>   
 </body>
 </html>

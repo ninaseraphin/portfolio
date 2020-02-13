@@ -22,7 +22,7 @@ class Projet extends Manager {
 	public function getListe() 
 	{
 		$res = Array();
-        $query = "select ".self::TABLE_PROJET.".*, ".self::TABLE_TYPE.".Nom as NomType, media.Nom as NomImage, media.Extension as ExtensionImage, media.Alt FROM ". self::TABLE_PROJET." INNER JOIN Type ON ".self::TABLE_PROJET.".Type=".self::TABLE_TYPE.".Id INNER JOIN media ON media.Projet=projet.Id WHERE media.Principale=1 ORDER BY projet.Id;";
+		$query = "select ".self::TABLE_PROJET.".*, ".self::TABLE_TYPE.".Nom as NomType, ".self::TABLE_MEDIA.".Nom as NomImage, ".self::TABLE_MEDIA.".Extension as ExtensionImage, ".self::TABLE_MEDIA.".Alt FROM ". self::TABLE_PROJET." INNER JOIN ".self::TABLE_TYPE." ON ".self::TABLE_PROJET.".Type=".self::TABLE_TYPE.".Id INNER JOIN ".self::TABLE_MEDIA." ON ".self::TABLE_MEDIA.".Projet=".self::TABLE_PROJET.".Id WHERE ".self::TABLE_MEDIA.".Principale=1 ORDER BY ".self::TABLE_PROJET.".Id;";
 		if($mrResultat = $this->_connexion->query($query))
 		{
 			while($proj = $mrResultat->fetch_assoc())
