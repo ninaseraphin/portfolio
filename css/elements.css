@@ -24,24 +24,9 @@ li{
     font-size: 18px;
 }
 
+/* TEXTES ADAPTATIF */
 
-/* COULEURS ARRIERE PLAN*/
-.corail{
-    background-color: var(--color-corail)!important;
-}
-.bleu{
-    background-color: var(--color-bleu)!important;
-}
-.rose{
-    background-color: var(--color-rose)!important;
-}
-.vert{
-    background-color: var(--color-vert)!important;
-}
-.jaune{
-    background-color: var(--color-jaune)!important;
-}
-
+/* ADAPTATIF TELEPHONE */
 @media (max-width: 699px) {
     h1,h2{
         font-size: 44px;
@@ -61,3 +46,22 @@ li{
         font-size: 16px;
     }
 }
+
+/* COULEURS ARRIERE PLAN*/
+.corail{
+    background-color: var(--color-corail)!important;
+}
+.bleu{
+    background-color: var(--color-bleu)!important;
+}
+.rose{
+    background-color: var(--color-rose)!important;
+}
+.vert{
+    background-color: var(--color-vert)!important;
+}
+.jaune{
+    background-color: var(--color-jaune)!important;
+}
+
+

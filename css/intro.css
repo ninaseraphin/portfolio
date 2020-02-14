@@ -1,7 +1,18 @@
+/* ANIMATION D'INTRODUCTION */
+
 body{
     margin:0;
+    position:relative;
 }
-.nom-intro, .nom-intro2{
+/* SECTION INTRO*/
+.intro{
+    position:fixed;
+    top:0;
+    z-index:15;
+    min-width:100%;
+}
+/* NOM Nina Seraphin*/
+.nom-intro{
     font-family: 'Poppins', sans-serif;
     font-weight:600;
     font-size: 5.5em;
@@ -12,12 +23,17 @@ body{
     transform-origin: 0 0;
     color:white
 }
-.nom-intro2{
-    color:lightgrey;
-}
+/* FOND COULEUR */
 .fond-colore{
     width:100%;
     height:100vh;
     background-color: #EF5942;
     transform-origin: 0 0;
+    transform: scaleX(0);
+}
+/* ADAPTATIF TELEPHONE*/
+@media (max-width: 699px){
+    .nom-intro{
+        font-size: 4em;
+    }
 }

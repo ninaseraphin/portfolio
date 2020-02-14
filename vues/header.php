@@ -13,7 +13,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Portfolio Nina Seraphin</title>
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="<?php echo($debut)?>css/test.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo($debut)?>css/accueil.css">
         <link rel="stylesheet" type="text/css" href="<?php echo($debut)?>css/generic.css">
         <link rel="stylesheet" type="text/css" href="<?php echo($debut)?>css/elements.css">
         <link rel="stylesheet" type="text/css" href="<?php echo($debut)?>css/settings.css">
@@ -21,7 +21,6 @@
         if($page =="projet"){
             if($_SESSION["projet"]["Nom"] == "Motifs"){
                 ?>
-                <link rel="stylesheet" type="text/css" href="<?php echo($debut)?>css/motif2.css">
                 <script src="<?php echo($debut)?>node_modules/animejs/lib/anime.min.js"></script>
                 <script src="<?php echo($debut)?>js/fleurs.js"></script>
                 <script src="<?php echo($debut)?>js/motif2.js"></script>
@@ -49,7 +48,10 @@
             <?php
         }else{
             ?>
+            <link rel="stylesheet" type="text/css" href="<?php echo($debut)?>css/intro.css">
+            <script src="<?php echo($debut)?>node_modules/animejs/lib/anime.min.js"></script>
             <script src="<?php echo($debut)?>js/video.js" type="text/javascript" async=""></script>
+            <script src="<?php echo($debut)?>js/intro.js" type="text/javascript" async=""></script>
             <?php
         }
         ?>
