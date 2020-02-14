@@ -4,12 +4,12 @@
     --color-vert: #CCE5CC;
     --color-jaune: #F8C92B;
     --color-bleu: #1979AF;
-    /* --color-corail: #EF5942; */
     --color-corail: #ef6651;
     --color-rose: #F5AFBE;
     --color-blanc: #FFFFFF;
 
   /*  MARGIN / PADDING  */
+    --space-small: 15px;
     --space-base: 25px;
     --space-double: 50px;
 

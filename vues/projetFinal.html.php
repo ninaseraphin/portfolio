@@ -14,7 +14,7 @@
             </g>
         </svg>
         <div class="line controls">
-            <input class="progress" step=".001" type="range" min="0" max="100" value="0">
+            <input class="slider" step=".001" type="range" min="0" max="100" value="0">
         </div>
     </section>
     <section class="path">
@@ -104,9 +104,256 @@
             <rect fill="url(#patternTest)" stroke="black" width="400px" height="400px"/>
         </svg>
     </section>
-    
-    <section>
+
     <h3>Kaléidoscope</h3>
+            <section class="kaleidoscopeel">
+            
+            <style>
+        .kaleidoscopeel g{
+            transform-origin: 50% 50%;
+        }
+        </style>
+
+        <svg x="0px" y="0px"viewBox="0 0 351.3 351.3" height="600px" width="600px" xml:space="preserve">
+                <style type="text/css">
+                    .dt0{fill:#3F466A;}
+                    .dt1{fill:#4D9CCA;}
+                    .dt2{fill:#FF7A79;}
+                    .dt3{fill:#457398;}
+                    .dt4{fill:none;stroke:#3F466A;stroke-miterlimit:10;}
+                    .dt5{fill:#7AE1E0;}
+                    .dt6{fill:#FF7A79;stroke:#3F466A;stroke-miterlimit:10;}
+                    .dt7{fill:#FFF4F2;}
+                    .dt8{fill:#FA4656;}
+                    .dt9{fill:#FD7B73;}
+                    .dt10{fill:#3E4561;stroke:#4D9CCA;stroke-miterlimit:10;}
+                </style>
+                
+                <g id="motif-ext">
+                    <rect id="carre-90-2" x="52.3" y="66" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -47.3277 94.8476)" class="dt0 rect" width="77.1" height="77.1"/>
+                    <rect id="carre-fond" x="46.2" y="59.9" class="dt0" width="89.3" height="89.3"/>
+                    <rect id="carre-90" x="57.5" y="71.2" transform="matrix(0.7071 0.7071 -0.7071 0.7071 100.5331 -33.6016)" class="dt1 rect" width="66.8" height="66.8"/>
+                    <rect id="carre-5" x="52.3" y="66" class="dt1 rect" width="77.1" height="77.1"/>
+                    <rect id="carre-4" x="57.5" y="71.2" class="dt2 rect" width="66.8" height="66.8"/>
+                    <rect id="carre-3" x="62.6" y="76.1" class="dt3 rect" width="56.3" height="56.3"/>
+                    <rect id="carre-stroke" x="62.6" y="76.1" transform="matrix(0.7071 0.7071 -0.7071 0.7071 100.3319 -33.6159)" class="dt4 rect" width="56.3" height="56.3"/>
+                    <path id="carre-2" class="dt5 rect" d="M102.8,117.1H79.1c-0.7,0-1.2-0.6-1.2-1.2V92.1c0-0.7,0.6-1.2,1.2-1.2h23.7
+                        c0.7,0,1.2,0.6,1.2,1.2v23.7C104,116.5,103.5,117.1,102.8,117.1z"/>
+                    <path id="carre-centre" class="dt6 rect" d="M97.3,111.6H84.5c-0.7,0-1.2-0.6-1.2-1.2V97.6c0-0.7,0.6-1.2,1.2-1.2h12.8
+                        c0.7,0,1.2,0.6,1.2,1.2v12.8C98.6,111.1,98,111.6,97.3,111.6z"/>
+                    <g id="triangles-blc rect">
+                        <polygon class="dt7" points="61.3,58.6 44.8,58.6 44.8,75.1 		"/>
+                        <polygon class="dt7" points="120.5,58.6 137,58.6 137,75.1 		"/>
+                        <polygon class="dt7" points="61.3,149.4 44.8,149.4 44.8,132.9 		"/>
+                        <polygon class="dt7" points="120.5,149.4 137,149.4 137,132.9 		"/>
+                    </g>
+                    
+                        <rect id="carre-90-2_2_" x="216.3" y="66" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 361.1456 358.6982)" class="dt0" width="77.1" height="77.1"/>
+                        <rect id="carre-fond_2_" x="210.2" y="59.9" transform="matrix(-1 -4.489932e-11 4.489932e-11 -1 509.7232 209.1068)" class="dt0" width="89.3" height="89.3"/>
+                        <rect id="carre-90_2_" x="221.5" y="71.2" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 509.0064 -1.7306)" class="dt1" width="66.8" height="66.8"/>
+                        <rect id="carre-5_1_" x="216.3" y="66" transform="matrix(-1 -4.489399e-11 4.489399e-11 -1 509.7232 209.1068)" class="dt1" width="77.1" height="77.1"/>
+                        <rect id="carre-4_2_" x="221.5" y="71.2" transform="matrix(-1 -4.489576e-11 4.489576e-11 -1 509.7232 209.1068)" class="dt2" width="66.8" height="66.8"/>
+                        <rect id="carre-3_2_" x="226.8" y="76.1" transform="matrix(-1 -4.488289e-11 4.488289e-11 -1 509.8899 208.6068)" class="dt3" width="56.3" height="56.3"/>
+                        <rect id="carre-stroke_1_" x="226.8" y="76.1" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 508.9719 -2.2163)" class="dt4" width="56.3" height="56.3"/>
+                    <path id="carre-2_2_" class="dt5" d="M242.9,117.1h23.7c0.7,0,1.2-0.6,1.2-1.2V92.1c0-0.7-0.6-1.2-1.2-1.2h-23.7
+                        c-0.7,0-1.2,0.6-1.2,1.2v23.7C241.7,116.5,242.2,117.1,242.9,117.1z"/>
+                    <path id="carre-centre_1_" class="dt6" d="M248.4,111.6h12.8c0.7,0,1.2-0.6,1.2-1.2V97.6c0-0.7-0.6-1.2-1.2-1.2h-12.8
+                        c-0.7,0-1.2,0.6-1.2,1.2v12.8C247.1,111.1,247.7,111.6,248.4,111.6z"/>
+                    <g id="triangles-blc_1_">
+                        <polygon class="dt7" points="284.3,58.6 300.9,58.6 300.9,75.1 		"/>
+                        <polygon class="dt7" points="225.2,58.6 208.6,58.6 208.6,75.1 		"/>
+                        <polygon class="dt7" points="284.3,149.4 300.9,149.4 300.9,132.9 		"/>
+                        <polygon class="dt7" points="225.2,149.4 208.6,149.4 208.6,132.9 		"/>
+                    </g>
+                        <rect id="carre-90-2_4_" x="52.3" y="199.1" transform="matrix(0.7071 0.7071 -0.7071 0.7071 194.6451 5.3808)" class="dt0" width="77.1" height="77.1"/>
+                    <rect id="carre-fond_4_" x="46.2" y="193" class="dt0" width="89.3" height="89.3"/>
+                        <rect id="carre-90_4_" x="57.5" y="204.3" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -141.4397 133.83)" class="dt1" width="66.8" height="66.8"/>
+                    <rect id="carre-5_3_" x="52.3" y="199.1" class="dt1" width="77.1" height="77.1"/>
+                    <rect id="carre-4_4_" x="57.5" y="204.3" class="dt2" width="66.8" height="66.8"/>
+                    <rect id="carre-3_4_" x="62.6" y="209.7" class="dt3" width="56.3" height="56.3"/>
+                    
+                        <rect id="carre-stroke_3_" x="62.6" y="209.7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -141.6409 133.8443)" class="dt4" width="56.3" height="56.3"/>
+                    <path id="carre-2_4_" class="dt5" d="M102.8,225.1H79.1c-0.7,0-1.2,0.6-1.2,1.2v23.7c0,0.7,0.6,1.2,1.2,1.2h23.7
+                        c0.7,0,1.2-0.6,1.2-1.2v-23.7C104,225.7,103.5,225.1,102.8,225.1z"/>
+                    <path id="carre-centre_3_" class="dt6" d="M97.3,230.6H84.5c-0.7,0-1.2,0.6-1.2,1.2v12.8c0,0.7,0.6,1.2,1.2,1.2h12.8
+                        c0.7,0,1.2-0.6,1.2-1.2v-12.8C98.6,231.1,98,230.6,97.3,230.6z"/>
+                    <g id="triangles-blc_3_">
+                        <polygon class="dt7" points="61.3,283.6 44.8,283.6 44.8,267.1 		"/>
+                        <polygon class="dt7" points="120.5,283.6 137,283.6 137,267.1 		"/>
+                        <polygon class="dt7" points="61.3,192.8 44.8,192.8 44.8,209.3 		"/>
+                        <polygon class="dt7" points="120.5,192.8 137,192.8 137,209.3 		"/>
+                    </g>
+                    
+                        <rect id="carre-90-2_3_" x="216.3" y="199.1" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 603.1183 225.4758)" class="dt0" width="77.1" height="77.1"/>
+                    
+                        <rect id="carre-fond_3_" x="210.2" y="193" transform="matrix(-1 4.489907e-11 -4.489907e-11 -1 509.7232 475.2956)" class="dt0" width="89.3" height="89.3"/>
+                    
+                        <rect id="carre-90_3_" x="221.5" y="204.3" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 267.0336 585.9045)" class="dt1" width="66.8" height="66.8"/>
+                    
+                        <rect id="carre-5_2_" x="216.3" y="199.1" transform="matrix(-1 4.489374e-11 -4.489374e-11 -1 509.7232 475.2956)" class="dt1" width="77.1" height="77.1"/>
+                    
+                        <rect id="carre-4_3_" x="221.5" y="204.3" transform="matrix(-1 4.489552e-11 -4.489552e-11 -1 509.7232 475.2956)" class="dt2" width="66.8" height="66.8"/>
+                    
+                        <rect id="carre-3_3_" x="226.8" y="209.7" transform="matrix(-1 4.488264e-11 -4.488264e-11 -1 509.8899 475.7956)" class="dt3" width="56.3" height="56.3"/>
+                    
+                        <rect id="carre-stroke_2_" x="226.8" y="209.7" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 266.9991 586.3903)" class="dt4" width="56.3" height="56.3"/>
+                    <path id="carre-2_3_" class="dt5" d="M242.9,225.1h23.7c0.7,0,1.2,0.6,1.2,1.2v23.7c0,0.7-0.6,1.2-1.2,1.2h-23.7
+                        c-0.7,0-1.2-0.6-1.2-1.2v-23.7C241.7,225.7,242.2,225.1,242.9,225.1z"/>
+                    <path id="carre-centre_2_" class="dt6" d="M248.4,230.6h12.8c0.7,0,1.2,0.6,1.2,1.2v12.8c0,0.7-0.6,1.2-1.2,1.2h-12.8
+                        c-0.7,0-1.2-0.6-1.2-1.2v-12.8C247.1,231.1,247.7,230.6,248.4,230.6z"/>
+                    <g id="triangles-blc_2_">
+                        <polygon class="dt7" points="284.3,283.6 300.9,283.6 300.9,267.1 		"/>
+                        <polygon class="dt7" points="225.2,283.6 208.6,283.6 208.6,267.1 		"/>
+                        <polygon class="dt7" points="284.3,192.8 300.9,192.8 300.9,209.3 		"/>
+                        <polygon class="dt7" points="225.2,192.8 208.6,192.8 208.6,209.3 		"/>
+                    </g>
+                </g>
+                <g id="motif-ext2">
+                    
+                        <rect id="carre-90-2_5_" x="137.9" y="25.7" transform="matrix(4.490612e-11 1 -1 4.490612e-11 240.7568 -112.224)" class="dt0" width="77.1" height="77.1"/>
+                    
+                        <rect id="carre-fond_5_" x="131.9" y="19.6" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 346.7312 -15.0879)" class="dt0" width="89.3" height="89.3"/>
+                    
+                        <rect id="carre-90_5_" x="143.1" y="30.9" transform="matrix(-1 4.493638e-11 -4.493638e-11 -1 352.9808 128.5329)" class="dt2" width="66.8" height="66.8"/>
+                    
+                        <rect id="carre-5_4_" x="137.9" y="25.7" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 346.7312 -15.0879)" class="dt2" width="77.1" height="77.1"/>
+                    
+                        <rect id="carre-4_5_" x="143.1" y="30.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 346.7312 -15.0879)" class="dt3" width="66.8" height="66.8"/>
+                    
+                        <rect id="carre-3_5_" x="148.6" y="36.2" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 347.2169 -15.0534)" class="dt1" width="56.3" height="56.3"/>
+                    
+                        <rect id="carre-stroke_4_" x="148.6" y="36.2" transform="matrix(-1 4.491506e-11 -4.491506e-11 -1 353.4522 128.7686)" class="dt4" width="56.3" height="56.3"/>
+                    <path id="carre-2_5_" class="dt5" d="M159.2,63.9l16.8-16.8c0.5-0.5,1.3-0.5,1.7,0l16.8,16.8c0.5,0.5,0.5,1.3,0,1.7l-16.8,16.8
+                        c-0.5,0.5-1.3,0.5-1.7,0l-16.8-16.8C158.7,65.1,158.7,64.3,159.2,63.9z"/>
+                    <path id="carre-centre_4_" class="dt6" d="M166.9,63.9l9.1-9.1c0.5-0.5,1.3-0.5,1.7,0l9.1,9.1c0.5,0.5,0.5,1.3,0,1.7l-9.1,9.1
+                        c-0.5,0.5-1.3,0.5-1.7,0l-9.1-9.1C166.4,65.1,166.4,64.3,166.9,63.9z"/>
+                    <g id="triangles-blc_4_">
+                        <polygon class="dt7" points="229.9,75.9 241.5,64.3 229.9,52.6 		"/>
+                        <polygon class="dt7" points="188,117.8 176.3,129.5 164.7,117.8 		"/>
+                        <polygon class="dt7" points="165.6,11.7 177.3,0 189,11.7 		"/>
+                        <polygon class="dt7" points="123.8,53.5 112.1,65.2 123.8,76.9 		"/>
+                    </g>
+                    
+                        <rect id="carre-90-2_6_" x="137.9" y="248.4" transform="matrix(4.490636e-11 -1 1 4.490636e-11 -110.5219 463.5027)" class="dt0" width="77.1" height="77.1"/>
+                    
+                        <rect id="carre-fond_6_" x="131.9" y="242.4" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 98.3396 614.7582)" class="dt0" width="89.3" height="89.3"/>
+                    
+                        <rect id="carre-90_6_" x="143.1" y="253.6" transform="matrix(-1 -4.493662e-11 4.493662e-11 -1 352.9808 574.0246)" class="dt2" width="66.8" height="66.8"/>
+                    
+                        <rect id="carre-5_5_" x="137.9" y="248.4" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 98.3396 614.7582)" class="dt2" width="77.1" height="77.1"/>
+                    
+                        <rect id="carre-4_6_" x="143.1" y="253.6" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 98.3396 614.7582)" class="dt3" width="66.8" height="66.8"/>
+                    
+                        <rect id="carre-3_6_" x="148.6" y="258.7" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 98.8253 614.7236)" class="dt1" width="56.3" height="56.3"/>
+                    
+                        <rect id="carre-stroke_5_" x="148.6" y="258.7" transform="matrix(-1 -4.491530e-11 4.491530e-11 -1 353.4522 573.7889)" class="dt4" width="56.3" height="56.3"/>
+                    <path id="carre-2_6_" class="dt5" d="M159.2,287.4l16.8,16.8c0.5,0.5,1.3,0.5,1.7,0l16.8-16.8c0.5-0.5,0.5-1.3,0-1.7l-16.8-16.8
+                        c-0.5-0.5-1.3-0.5-1.7,0l-16.8,16.8C158.7,286.2,158.7,286.9,159.2,287.4z"/>
+                    <path id="carre-centre_5_" class="dt6" d="M166.9,287.4l9.1,9.1c0.5,0.5,1.3,0.5,1.7,0l9.1-9.1c0.5-0.5,0.5-1.3,0-1.7l-9.1-9.1
+                        c-0.5-0.5-1.3-0.5-1.7,0l-9.1,9.1C166.4,286.2,166.4,286.9,166.9,287.4z"/>
+                    <g id="triangles-blc_5_">
+                        <polygon class="dt7" points="229.9,275.3 241.5,287 229.9,298.7 		"/>
+                        <polygon class="dt7" points="188,233.5 176.3,221.8 164.7,233.5 		"/>
+                        <polygon class="dt7" points="165.6,339.6 177.3,351.3 189,339.6 		"/>
+                        <polygon class="dt7" points="123.8,297.8 112.1,286.1 123.8,274.4 		"/>
+                    </g>
+                    <rect id="carre-90-2_8_" x="25.7" y="138.1" class="dt0" width="77.1" height="77.1"/>
+                    
+                        <rect id="carre-fond_8_" x="19.6" y="132" transform="matrix(0.7071 0.7071 -0.7071 0.7071 143.7504 6.3033)" class="dt0" width="89.3" height="89.3"/>
+                    
+                        <rect id="carre-90_8_" x="30.9" y="143.3" transform="matrix(5.488336e-14 1 -1 5.488336e-14 240.9401 112.4073)" class="dt2" width="66.8" height="66.8"/>
+                    
+                        <rect id="carre-5_7_" x="25.7" y="138.1" transform="matrix(0.7071 0.7071 -0.7071 0.7071 143.7504 6.3033)" class="dt2" width="77.1" height="77.1"/>
+                    
+                        <rect id="carre-4_8_" x="30.9" y="143.3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 143.7504 6.3033)" class="dt3" width="66.8" height="66.8"/>
+                    
+                        <rect id="carre-3_8_" x="36.2" y="148.3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 143.6182 6.1509)" class="dt1" width="56.3" height="56.3"/>
+                    
+                        <rect id="carre-stroke_7_" x="36.2" y="148.3" transform="matrix(3.179073e-14 1 -1 3.179073e-14 240.8223 112.0537)" class="dt4" width="56.3" height="56.3"/>
+                    <path id="carre-2_8_" class="dt5" d="M63.9,194l-16.8-16.8c-0.5-0.5-0.5-1.3,0-1.7l16.8-16.8c0.5-0.5,1.3-0.5,1.7,0l16.8,16.8
+                        c0.5,0.5,0.5,1.3,0,1.7L65.6,194C65.1,194.5,64.3,194.5,63.9,194z"/>
+                    <path id="carre-centre_7_" class="dt6" d="M63.9,186.3l-9.1-9.1c-0.5-0.5-0.5-1.3,0-1.7l9.1-9.1c0.5-0.5,1.3-0.5,1.7,0l9.1,9.1
+                        c0.5,0.5,0.5,1.3,0,1.7l-9.1,9.1C65.1,186.8,64.3,186.8,63.9,186.3z"/>
+                    <g id="triangles-blc_7_">
+                        <polygon class="dt7" points="75.9,123.3 64.3,111.6 52.6,123.3 		"/>
+                        <polygon class="dt7" points="117.8,165.1 129.5,176.8 117.8,188.5 		"/>
+                        <polygon class="dt7" points="11.7,187.6 0,175.9 11.7,164.2 		"/>
+                        <polygon class="dt7" points="53.5,229.4 65.2,241.1 76.9,229.4 		"/>
+                    </g>
+                    
+                        <rect id="carre-90-2_7_" x="248.4" y="138.1" transform="matrix(-1 -8.978786e-11 8.978786e-11 -1 574.0246 353.3474)" class="dt0" width="77.1" height="77.1"/>
+                    
+                        <rect id="carre-fond_7_" x="242.4" y="132" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 614.8878 98.6525)" class="dt0" width="89.3" height="89.3"/>
+                    
+                        <rect id="carre-90_7_" x="253.6" y="143.3" transform="matrix(-8.981900e-11 1 -1 -8.981900e-11 463.686 -110.3386)" class="dt2" width="66.8" height="66.8"/>
+                    
+                        <rect id="carre-5_6_" x="248.4" y="138.1" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 614.8878 98.6525)" class="dt2" width="77.1" height="77.1"/>
+                    
+                        <rect id="carre-4_7_" x="253.6" y="143.3" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 614.8878 98.6525)" class="dt3" width="66.8" height="66.8"/>
+                    
+                        <rect id="carre-3_7_" x="258.7" y="148.3" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 614.52 98.3335)" class="dt1" width="56.3" height="56.3"/>
+                    
+                        <rect id="carre-stroke_6_" x="258.7" y="148.3" transform="matrix(-8.979768e-11 1 -1 -8.979768e-11 463.3324 -110.4564)" class="dt4" width="56.3" height="56.3"/>
+                    <path id="carre-2_7_" class="dt5" d="M287.4,194l16.8-16.8c0.5-0.5,0.5-1.3,0-1.7l-16.8-16.8c-0.5-0.5-1.3-0.5-1.7,0l-16.8,16.8
+                        c-0.5,0.5-0.5,1.3,0,1.7l16.8,16.8C286.2,194.5,286.9,194.5,287.4,194z"/>
+                    <path id="carre-centre_6_" class="dt6" d="M287.4,186.3l9.1-9.1c0.5-0.5,0.5-1.3,0-1.7l-9.1-9.1c-0.5-0.5-1.3-0.5-1.7,0l-9.1,9.1
+                        c-0.5,0.5-0.5,1.3,0,1.7l9.1,9.1C286.2,186.8,286.9,186.8,287.4,186.3z"/>
+                    <g id="triangles-blc_6_">
+                        <polygon class="dt7" points="275.3,123.3 287,111.6 298.7,123.3 		"/>
+                        <polygon class="dt7" points="233.5,165.1 221.8,176.8 233.5,188.5 		"/>
+                        <polygon class="dt7" points="339.6,187.6 351.3,175.9 339.6,164.2 		"/>
+                        <polygon class="dt7" points="297.8,229.4 286.1,241.1 274.4,229.4 		"/>
+                    </g>
+                </g>
+                <g id="motif-central">
+                    
+                        <rect id="carre-fond_1_" x="138.1" y="133.9" transform="matrix(6.123234e-17 -1 1 6.123234e-17 4.1732 349.1423)" class="dt0" width="77.1" height="77.1"/>
+                    
+                        <rect id="crre-90-3" x="132" y="127.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -70.2232 175.4354)" class="dt0" width="89.3" height="89.3"/>
+                    <rect id="carre-4_1_" x="143.3" y="139.1" class="dt1" width="66.8" height="66.8"/>
+                    
+                        <rect id="carre-90-2_1_" x="138.1" y="133.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -70.2232 175.4354)" class="dt1" width="77.1" height="77.1"/>
+                    
+                        <rect id="carre-90_1_" x="143.3" y="139.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -70.2232 175.4354)" class="dt8" width="66.8" height="66.8"/>
+                    <rect id="carre-3_1_" x="148.3" y="144.2" class="dt9" width="56.3" height="56.3"/>
+                    <path id="carre-2_1_" class="dt8" d="M194,172.9l-16.8,16.8c-0.5,0.5-1.3,0.5-1.7,0l-16.8-16.8c-0.5-0.5-0.5-1.3,0-1.7l16.8-16.8
+                        c0.5-0.5,1.3-0.5,1.7,0l16.8,16.8C194.5,171.6,194.5,172.4,194,172.9z"/>
+                    <path id="carre-central" class="dt6" d="M186.3,172.9l-9.1,9.1c-0.5,0.5-1.3,0.5-1.7,0l-9.1-9.1c-0.5-0.5-0.5-1.3,0-1.7l9.1-9.1
+                        c0.5-0.5,1.3-0.5,1.7,0l9.1,9.1C186.7,171.6,186.7,172.4,186.3,172.9z"/>
+                    <g id="triangles">
+                        <polygon class="dt7" points="123.3,160.8 111.6,172.5 123.3,184.2 		"/>
+                        <polygon class="dt7" points="165.1,119 176.8,107.3 188.5,119 		"/>
+                        <polygon class="dt7" points="187.6,225.1 175.9,236.8 164.2,225.1 		"/>
+                        <polygon class="dt7" points="229.4,183.2 241.1,171.5 229.4,159.9 		"/>
+                    </g>
+                    <g id="etoiles">
+                        <polygon class="dt10" points="188.3,156.7 175.9,152.7 163.4,156.7 167.4,144.2 163.4,131.7 175.9,135.7 188.3,131.7 184.3,144.2 
+                                    "/>
+                        <polygon class="dt10" points="188.3,187.4 175.9,191.4 163.4,187.4 167.4,199.8 163.4,212.3 175.9,208.3 188.3,212.3 184.3,199.8 
+                                    "/>
+                        <polygon class="dt10" points="159.7,159.3 155.7,171.8 159.7,184.2 147.2,180.2 134.7,184.2 138.7,171.8 134.7,159.3 147.2,163.3 
+                                    "/>
+                        <polygon class="dt10" points="190.4,159.3 194.4,171.8 190.4,184.2 202.8,180.2 215.3,184.2 211.3,171.8 215.3,159.3 202.8,163.3 
+                                    "/>
+                    </g>
+                </g>
+                </svg>
+
+        <section class="secButton">
+        <div class="button play">
+                    <p>Jouer</p>
+                </div>
+                <div class="button pause">
+                    <p>Pause</p>
+                </div>
+        </section>
+
+            </section>
+
+
+           
+    
+    <section class="kaleidoscope">
     <svg x="0px" y="0px" width="1200px" height="800px">
         <style type="text/css">
             .st0{fill:#3F466A;}
@@ -583,251 +830,7 @@
             
 </section>
 
-            <section class="kaleidoscopeel">
-            <style>
-        .kaleidoscopeel g{
-            transform-origin: 50% 50%;
-        }
-        </style>
-
-        <svg x="0px" y="0px"viewBox="0 0 351.3 351.3" height="600px" width="600px" xml:space="preserve">
-                <style type="text/css">
-                    .dt0{fill:#3F466A;}
-                    .dt1{fill:#4D9CCA;}
-                    .dt2{fill:#FF7A79;}
-                    .dt3{fill:#457398;}
-                    .dt4{fill:none;stroke:#3F466A;stroke-miterlimit:10;}
-                    .dt5{fill:#7AE1E0;}
-                    .dt6{fill:#FF7A79;stroke:#3F466A;stroke-miterlimit:10;}
-                    .dt7{fill:#FFF4F2;}
-                    .dt8{fill:#FA4656;}
-                    .dt9{fill:#FD7B73;}
-                    .dt10{fill:#3E4561;stroke:#4D9CCA;stroke-miterlimit:10;}
-                </style>
-                
-                <g id="motif-ext">
-                    <rect id="carre-90-2" x="52.3" y="66" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -47.3277 94.8476)" class="dt0 rect" width="77.1" height="77.1"/>
-                    <rect id="carre-fond" x="46.2" y="59.9" class="dt0" width="89.3" height="89.3"/>
-                    <rect id="carre-90" x="57.5" y="71.2" transform="matrix(0.7071 0.7071 -0.7071 0.7071 100.5331 -33.6016)" class="dt1 rect" width="66.8" height="66.8"/>
-                    <rect id="carre-5" x="52.3" y="66" class="dt1 rect" width="77.1" height="77.1"/>
-                    <rect id="carre-4" x="57.5" y="71.2" class="dt2 rect" width="66.8" height="66.8"/>
-                    <rect id="carre-3" x="62.6" y="76.1" class="dt3 rect" width="56.3" height="56.3"/>
-                    <rect id="carre-stroke" x="62.6" y="76.1" transform="matrix(0.7071 0.7071 -0.7071 0.7071 100.3319 -33.6159)" class="dt4 rect" width="56.3" height="56.3"/>
-                    <path id="carre-2" class="dt5 rect" d="M102.8,117.1H79.1c-0.7,0-1.2-0.6-1.2-1.2V92.1c0-0.7,0.6-1.2,1.2-1.2h23.7
-                        c0.7,0,1.2,0.6,1.2,1.2v23.7C104,116.5,103.5,117.1,102.8,117.1z"/>
-                    <path id="carre-centre" class="dt6 rect" d="M97.3,111.6H84.5c-0.7,0-1.2-0.6-1.2-1.2V97.6c0-0.7,0.6-1.2,1.2-1.2h12.8
-                        c0.7,0,1.2,0.6,1.2,1.2v12.8C98.6,111.1,98,111.6,97.3,111.6z"/>
-                    <g id="triangles-blc rect">
-                        <polygon class="dt7" points="61.3,58.6 44.8,58.6 44.8,75.1 		"/>
-                        <polygon class="dt7" points="120.5,58.6 137,58.6 137,75.1 		"/>
-                        <polygon class="dt7" points="61.3,149.4 44.8,149.4 44.8,132.9 		"/>
-                        <polygon class="dt7" points="120.5,149.4 137,149.4 137,132.9 		"/>
-                    </g>
-                    
-                        <rect id="carre-90-2_2_" x="216.3" y="66" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 361.1456 358.6982)" class="dt0" width="77.1" height="77.1"/>
-                        <rect id="carre-fond_2_" x="210.2" y="59.9" transform="matrix(-1 -4.489932e-11 4.489932e-11 -1 509.7232 209.1068)" class="dt0" width="89.3" height="89.3"/>
-                        <rect id="carre-90_2_" x="221.5" y="71.2" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 509.0064 -1.7306)" class="dt1" width="66.8" height="66.8"/>
-                        <rect id="carre-5_1_" x="216.3" y="66" transform="matrix(-1 -4.489399e-11 4.489399e-11 -1 509.7232 209.1068)" class="dt1" width="77.1" height="77.1"/>
-                        <rect id="carre-4_2_" x="221.5" y="71.2" transform="matrix(-1 -4.489576e-11 4.489576e-11 -1 509.7232 209.1068)" class="dt2" width="66.8" height="66.8"/>
-                        <rect id="carre-3_2_" x="226.8" y="76.1" transform="matrix(-1 -4.488289e-11 4.488289e-11 -1 509.8899 208.6068)" class="dt3" width="56.3" height="56.3"/>
-                        <rect id="carre-stroke_1_" x="226.8" y="76.1" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 508.9719 -2.2163)" class="dt4" width="56.3" height="56.3"/>
-                    <path id="carre-2_2_" class="dt5" d="M242.9,117.1h23.7c0.7,0,1.2-0.6,1.2-1.2V92.1c0-0.7-0.6-1.2-1.2-1.2h-23.7
-                        c-0.7,0-1.2,0.6-1.2,1.2v23.7C241.7,116.5,242.2,117.1,242.9,117.1z"/>
-                    <path id="carre-centre_1_" class="dt6" d="M248.4,111.6h12.8c0.7,0,1.2-0.6,1.2-1.2V97.6c0-0.7-0.6-1.2-1.2-1.2h-12.8
-                        c-0.7,0-1.2,0.6-1.2,1.2v12.8C247.1,111.1,247.7,111.6,248.4,111.6z"/>
-                    <g id="triangles-blc_1_">
-                        <polygon class="dt7" points="284.3,58.6 300.9,58.6 300.9,75.1 		"/>
-                        <polygon class="dt7" points="225.2,58.6 208.6,58.6 208.6,75.1 		"/>
-                        <polygon class="dt7" points="284.3,149.4 300.9,149.4 300.9,132.9 		"/>
-                        <polygon class="dt7" points="225.2,149.4 208.6,149.4 208.6,132.9 		"/>
-                    </g>
-                        <rect id="carre-90-2_4_" x="52.3" y="199.1" transform="matrix(0.7071 0.7071 -0.7071 0.7071 194.6451 5.3808)" class="dt0" width="77.1" height="77.1"/>
-                    <rect id="carre-fond_4_" x="46.2" y="193" class="dt0" width="89.3" height="89.3"/>
-                        <rect id="carre-90_4_" x="57.5" y="204.3" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -141.4397 133.83)" class="dt1" width="66.8" height="66.8"/>
-                    <rect id="carre-5_3_" x="52.3" y="199.1" class="dt1" width="77.1" height="77.1"/>
-                    <rect id="carre-4_4_" x="57.5" y="204.3" class="dt2" width="66.8" height="66.8"/>
-                    <rect id="carre-3_4_" x="62.6" y="209.7" class="dt3" width="56.3" height="56.3"/>
-                    
-                        <rect id="carre-stroke_3_" x="62.6" y="209.7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -141.6409 133.8443)" class="dt4" width="56.3" height="56.3"/>
-                    <path id="carre-2_4_" class="dt5" d="M102.8,225.1H79.1c-0.7,0-1.2,0.6-1.2,1.2v23.7c0,0.7,0.6,1.2,1.2,1.2h23.7
-                        c0.7,0,1.2-0.6,1.2-1.2v-23.7C104,225.7,103.5,225.1,102.8,225.1z"/>
-                    <path id="carre-centre_3_" class="dt6" d="M97.3,230.6H84.5c-0.7,0-1.2,0.6-1.2,1.2v12.8c0,0.7,0.6,1.2,1.2,1.2h12.8
-                        c0.7,0,1.2-0.6,1.2-1.2v-12.8C98.6,231.1,98,230.6,97.3,230.6z"/>
-                    <g id="triangles-blc_3_">
-                        <polygon class="dt7" points="61.3,283.6 44.8,283.6 44.8,267.1 		"/>
-                        <polygon class="dt7" points="120.5,283.6 137,283.6 137,267.1 		"/>
-                        <polygon class="dt7" points="61.3,192.8 44.8,192.8 44.8,209.3 		"/>
-                        <polygon class="dt7" points="120.5,192.8 137,192.8 137,209.3 		"/>
-                    </g>
-                    
-                        <rect id="carre-90-2_3_" x="216.3" y="199.1" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 603.1183 225.4758)" class="dt0" width="77.1" height="77.1"/>
-                    
-                        <rect id="carre-fond_3_" x="210.2" y="193" transform="matrix(-1 4.489907e-11 -4.489907e-11 -1 509.7232 475.2956)" class="dt0" width="89.3" height="89.3"/>
-                    
-                        <rect id="carre-90_3_" x="221.5" y="204.3" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 267.0336 585.9045)" class="dt1" width="66.8" height="66.8"/>
-                    
-                        <rect id="carre-5_2_" x="216.3" y="199.1" transform="matrix(-1 4.489374e-11 -4.489374e-11 -1 509.7232 475.2956)" class="dt1" width="77.1" height="77.1"/>
-                    
-                        <rect id="carre-4_3_" x="221.5" y="204.3" transform="matrix(-1 4.489552e-11 -4.489552e-11 -1 509.7232 475.2956)" class="dt2" width="66.8" height="66.8"/>
-                    
-                        <rect id="carre-3_3_" x="226.8" y="209.7" transform="matrix(-1 4.488264e-11 -4.488264e-11 -1 509.8899 475.7956)" class="dt3" width="56.3" height="56.3"/>
-                    
-                        <rect id="carre-stroke_2_" x="226.8" y="209.7" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 266.9991 586.3903)" class="dt4" width="56.3" height="56.3"/>
-                    <path id="carre-2_3_" class="dt5" d="M242.9,225.1h23.7c0.7,0,1.2,0.6,1.2,1.2v23.7c0,0.7-0.6,1.2-1.2,1.2h-23.7
-                        c-0.7,0-1.2-0.6-1.2-1.2v-23.7C241.7,225.7,242.2,225.1,242.9,225.1z"/>
-                    <path id="carre-centre_2_" class="dt6" d="M248.4,230.6h12.8c0.7,0,1.2,0.6,1.2,1.2v12.8c0,0.7-0.6,1.2-1.2,1.2h-12.8
-                        c-0.7,0-1.2-0.6-1.2-1.2v-12.8C247.1,231.1,247.7,230.6,248.4,230.6z"/>
-                    <g id="triangles-blc_2_">
-                        <polygon class="dt7" points="284.3,283.6 300.9,283.6 300.9,267.1 		"/>
-                        <polygon class="dt7" points="225.2,283.6 208.6,283.6 208.6,267.1 		"/>
-                        <polygon class="dt7" points="284.3,192.8 300.9,192.8 300.9,209.3 		"/>
-                        <polygon class="dt7" points="225.2,192.8 208.6,192.8 208.6,209.3 		"/>
-                    </g>
-                </g>
-                <g id="motif-ext2">
-                    
-                        <rect id="carre-90-2_5_" x="137.9" y="25.7" transform="matrix(4.490612e-11 1 -1 4.490612e-11 240.7568 -112.224)" class="dt0" width="77.1" height="77.1"/>
-                    
-                        <rect id="carre-fond_5_" x="131.9" y="19.6" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 346.7312 -15.0879)" class="dt0" width="89.3" height="89.3"/>
-                    
-                        <rect id="carre-90_5_" x="143.1" y="30.9" transform="matrix(-1 4.493638e-11 -4.493638e-11 -1 352.9808 128.5329)" class="dt2" width="66.8" height="66.8"/>
-                    
-                        <rect id="carre-5_4_" x="137.9" y="25.7" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 346.7312 -15.0879)" class="dt2" width="77.1" height="77.1"/>
-                    
-                        <rect id="carre-4_5_" x="143.1" y="30.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 346.7312 -15.0879)" class="dt3" width="66.8" height="66.8"/>
-                    
-                        <rect id="carre-3_5_" x="148.6" y="36.2" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 347.2169 -15.0534)" class="dt1" width="56.3" height="56.3"/>
-                    
-                        <rect id="carre-stroke_4_" x="148.6" y="36.2" transform="matrix(-1 4.491506e-11 -4.491506e-11 -1 353.4522 128.7686)" class="dt4" width="56.3" height="56.3"/>
-                    <path id="carre-2_5_" class="dt5" d="M159.2,63.9l16.8-16.8c0.5-0.5,1.3-0.5,1.7,0l16.8,16.8c0.5,0.5,0.5,1.3,0,1.7l-16.8,16.8
-                        c-0.5,0.5-1.3,0.5-1.7,0l-16.8-16.8C158.7,65.1,158.7,64.3,159.2,63.9z"/>
-                    <path id="carre-centre_4_" class="dt6" d="M166.9,63.9l9.1-9.1c0.5-0.5,1.3-0.5,1.7,0l9.1,9.1c0.5,0.5,0.5,1.3,0,1.7l-9.1,9.1
-                        c-0.5,0.5-1.3,0.5-1.7,0l-9.1-9.1C166.4,65.1,166.4,64.3,166.9,63.9z"/>
-                    <g id="triangles-blc_4_">
-                        <polygon class="dt7" points="229.9,75.9 241.5,64.3 229.9,52.6 		"/>
-                        <polygon class="dt7" points="188,117.8 176.3,129.5 164.7,117.8 		"/>
-                        <polygon class="dt7" points="165.6,11.7 177.3,0 189,11.7 		"/>
-                        <polygon class="dt7" points="123.8,53.5 112.1,65.2 123.8,76.9 		"/>
-                    </g>
-                    
-                        <rect id="carre-90-2_6_" x="137.9" y="248.4" transform="matrix(4.490636e-11 -1 1 4.490636e-11 -110.5219 463.5027)" class="dt0" width="77.1" height="77.1"/>
-                    
-                        <rect id="carre-fond_6_" x="131.9" y="242.4" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 98.3396 614.7582)" class="dt0" width="89.3" height="89.3"/>
-                    
-                        <rect id="carre-90_6_" x="143.1" y="253.6" transform="matrix(-1 -4.493662e-11 4.493662e-11 -1 352.9808 574.0246)" class="dt2" width="66.8" height="66.8"/>
-                    
-                        <rect id="carre-5_5_" x="137.9" y="248.4" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 98.3396 614.7582)" class="dt2" width="77.1" height="77.1"/>
-                    
-                        <rect id="carre-4_6_" x="143.1" y="253.6" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 98.3396 614.7582)" class="dt3" width="66.8" height="66.8"/>
-                    
-                        <rect id="carre-3_6_" x="148.6" y="258.7" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 98.8253 614.7236)" class="dt1" width="56.3" height="56.3"/>
-                    
-                        <rect id="carre-stroke_5_" x="148.6" y="258.7" transform="matrix(-1 -4.491530e-11 4.491530e-11 -1 353.4522 573.7889)" class="dt4" width="56.3" height="56.3"/>
-                    <path id="carre-2_6_" class="dt5" d="M159.2,287.4l16.8,16.8c0.5,0.5,1.3,0.5,1.7,0l16.8-16.8c0.5-0.5,0.5-1.3,0-1.7l-16.8-16.8
-                        c-0.5-0.5-1.3-0.5-1.7,0l-16.8,16.8C158.7,286.2,158.7,286.9,159.2,287.4z"/>
-                    <path id="carre-centre_5_" class="dt6" d="M166.9,287.4l9.1,9.1c0.5,0.5,1.3,0.5,1.7,0l9.1-9.1c0.5-0.5,0.5-1.3,0-1.7l-9.1-9.1
-                        c-0.5-0.5-1.3-0.5-1.7,0l-9.1,9.1C166.4,286.2,166.4,286.9,166.9,287.4z"/>
-                    <g id="triangles-blc_5_">
-                        <polygon class="dt7" points="229.9,275.3 241.5,287 229.9,298.7 		"/>
-                        <polygon class="dt7" points="188,233.5 176.3,221.8 164.7,233.5 		"/>
-                        <polygon class="dt7" points="165.6,339.6 177.3,351.3 189,339.6 		"/>
-                        <polygon class="dt7" points="123.8,297.8 112.1,286.1 123.8,274.4 		"/>
-                    </g>
-                    <rect id="carre-90-2_8_" x="25.7" y="138.1" class="dt0" width="77.1" height="77.1"/>
-                    
-                        <rect id="carre-fond_8_" x="19.6" y="132" transform="matrix(0.7071 0.7071 -0.7071 0.7071 143.7504 6.3033)" class="dt0" width="89.3" height="89.3"/>
-                    
-                        <rect id="carre-90_8_" x="30.9" y="143.3" transform="matrix(5.488336e-14 1 -1 5.488336e-14 240.9401 112.4073)" class="dt2" width="66.8" height="66.8"/>
-                    
-                        <rect id="carre-5_7_" x="25.7" y="138.1" transform="matrix(0.7071 0.7071 -0.7071 0.7071 143.7504 6.3033)" class="dt2" width="77.1" height="77.1"/>
-                    
-                        <rect id="carre-4_8_" x="30.9" y="143.3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 143.7504 6.3033)" class="dt3" width="66.8" height="66.8"/>
-                    
-                        <rect id="carre-3_8_" x="36.2" y="148.3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 143.6182 6.1509)" class="dt1" width="56.3" height="56.3"/>
-                    
-                        <rect id="carre-stroke_7_" x="36.2" y="148.3" transform="matrix(3.179073e-14 1 -1 3.179073e-14 240.8223 112.0537)" class="dt4" width="56.3" height="56.3"/>
-                    <path id="carre-2_8_" class="dt5" d="M63.9,194l-16.8-16.8c-0.5-0.5-0.5-1.3,0-1.7l16.8-16.8c0.5-0.5,1.3-0.5,1.7,0l16.8,16.8
-                        c0.5,0.5,0.5,1.3,0,1.7L65.6,194C65.1,194.5,64.3,194.5,63.9,194z"/>
-                    <path id="carre-centre_7_" class="dt6" d="M63.9,186.3l-9.1-9.1c-0.5-0.5-0.5-1.3,0-1.7l9.1-9.1c0.5-0.5,1.3-0.5,1.7,0l9.1,9.1
-                        c0.5,0.5,0.5,1.3,0,1.7l-9.1,9.1C65.1,186.8,64.3,186.8,63.9,186.3z"/>
-                    <g id="triangles-blc_7_">
-                        <polygon class="dt7" points="75.9,123.3 64.3,111.6 52.6,123.3 		"/>
-                        <polygon class="dt7" points="117.8,165.1 129.5,176.8 117.8,188.5 		"/>
-                        <polygon class="dt7" points="11.7,187.6 0,175.9 11.7,164.2 		"/>
-                        <polygon class="dt7" points="53.5,229.4 65.2,241.1 76.9,229.4 		"/>
-                    </g>
-                    
-                        <rect id="carre-90-2_7_" x="248.4" y="138.1" transform="matrix(-1 -8.978786e-11 8.978786e-11 -1 574.0246 353.3474)" class="dt0" width="77.1" height="77.1"/>
-                    
-                        <rect id="carre-fond_7_" x="242.4" y="132" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 614.8878 98.6525)" class="dt0" width="89.3" height="89.3"/>
-                    
-                        <rect id="carre-90_7_" x="253.6" y="143.3" transform="matrix(-8.981900e-11 1 -1 -8.981900e-11 463.686 -110.3386)" class="dt2" width="66.8" height="66.8"/>
-                    
-                        <rect id="carre-5_6_" x="248.4" y="138.1" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 614.8878 98.6525)" class="dt2" width="77.1" height="77.1"/>
-                    
-                        <rect id="carre-4_7_" x="253.6" y="143.3" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 614.8878 98.6525)" class="dt3" width="66.8" height="66.8"/>
-                    
-                        <rect id="carre-3_7_" x="258.7" y="148.3" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 614.52 98.3335)" class="dt1" width="56.3" height="56.3"/>
-                    
-                        <rect id="carre-stroke_6_" x="258.7" y="148.3" transform="matrix(-8.979768e-11 1 -1 -8.979768e-11 463.3324 -110.4564)" class="dt4" width="56.3" height="56.3"/>
-                    <path id="carre-2_7_" class="dt5" d="M287.4,194l16.8-16.8c0.5-0.5,0.5-1.3,0-1.7l-16.8-16.8c-0.5-0.5-1.3-0.5-1.7,0l-16.8,16.8
-                        c-0.5,0.5-0.5,1.3,0,1.7l16.8,16.8C286.2,194.5,286.9,194.5,287.4,194z"/>
-                    <path id="carre-centre_6_" class="dt6" d="M287.4,186.3l9.1-9.1c0.5-0.5,0.5-1.3,0-1.7l-9.1-9.1c-0.5-0.5-1.3-0.5-1.7,0l-9.1,9.1
-                        c-0.5,0.5-0.5,1.3,0,1.7l9.1,9.1C286.2,186.8,286.9,186.8,287.4,186.3z"/>
-                    <g id="triangles-blc_6_">
-                        <polygon class="dt7" points="275.3,123.3 287,111.6 298.7,123.3 		"/>
-                        <polygon class="dt7" points="233.5,165.1 221.8,176.8 233.5,188.5 		"/>
-                        <polygon class="dt7" points="339.6,187.6 351.3,175.9 339.6,164.2 		"/>
-                        <polygon class="dt7" points="297.8,229.4 286.1,241.1 274.4,229.4 		"/>
-                    </g>
-                </g>
-                <g id="motif-central">
-                    
-                        <rect id="carre-fond_1_" x="138.1" y="133.9" transform="matrix(6.123234e-17 -1 1 6.123234e-17 4.1732 349.1423)" class="dt0" width="77.1" height="77.1"/>
-                    
-                        <rect id="crre-90-3" x="132" y="127.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -70.2232 175.4354)" class="dt0" width="89.3" height="89.3"/>
-                    <rect id="carre-4_1_" x="143.3" y="139.1" class="dt1" width="66.8" height="66.8"/>
-                    
-                        <rect id="carre-90-2_1_" x="138.1" y="133.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -70.2232 175.4354)" class="dt1" width="77.1" height="77.1"/>
-                    
-                        <rect id="carre-90_1_" x="143.3" y="139.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -70.2232 175.4354)" class="dt8" width="66.8" height="66.8"/>
-                    <rect id="carre-3_1_" x="148.3" y="144.2" class="dt9" width="56.3" height="56.3"/>
-                    <path id="carre-2_1_" class="dt8" d="M194,172.9l-16.8,16.8c-0.5,0.5-1.3,0.5-1.7,0l-16.8-16.8c-0.5-0.5-0.5-1.3,0-1.7l16.8-16.8
-                        c0.5-0.5,1.3-0.5,1.7,0l16.8,16.8C194.5,171.6,194.5,172.4,194,172.9z"/>
-                    <path id="carre-central" class="dt6" d="M186.3,172.9l-9.1,9.1c-0.5,0.5-1.3,0.5-1.7,0l-9.1-9.1c-0.5-0.5-0.5-1.3,0-1.7l9.1-9.1
-                        c0.5-0.5,1.3-0.5,1.7,0l9.1,9.1C186.7,171.6,186.7,172.4,186.3,172.9z"/>
-                    <g id="triangles">
-                        <polygon class="dt7" points="123.3,160.8 111.6,172.5 123.3,184.2 		"/>
-                        <polygon class="dt7" points="165.1,119 176.8,107.3 188.5,119 		"/>
-                        <polygon class="dt7" points="187.6,225.1 175.9,236.8 164.2,225.1 		"/>
-                        <polygon class="dt7" points="229.4,183.2 241.1,171.5 229.4,159.9 		"/>
-                    </g>
-                    <g id="etoiles">
-                        <polygon class="dt10" points="188.3,156.7 175.9,152.7 163.4,156.7 167.4,144.2 163.4,131.7 175.9,135.7 188.3,131.7 184.3,144.2 
-                                    "/>
-                        <polygon class="dt10" points="188.3,187.4 175.9,191.4 163.4,187.4 167.4,199.8 163.4,212.3 175.9,208.3 188.3,212.3 184.3,199.8 
-                                    "/>
-                        <polygon class="dt10" points="159.7,159.3 155.7,171.8 159.7,184.2 147.2,180.2 134.7,184.2 138.7,171.8 134.7,159.3 147.2,163.3 
-                                    "/>
-                        <polygon class="dt10" points="190.4,159.3 194.4,171.8 190.4,184.2 202.8,180.2 215.3,184.2 211.3,171.8 215.3,159.3 202.8,163.3 
-                                    "/>
-                    </g>
-                </g>
-                </svg>
-
-        <section class="secButton">
-        <div class="button play">
-                    <p>Jouer</p>
-                </div>
-                <div class="button pause">
-                    <p>Pause</p>
-                </div>
-        </section>
-
-            </section>
-
-
-            <section class="stagger">
+<section class="stagger">
     <h3>Stagger</h3>
     <svg  id="geom"  x="0px" y="0px" width="400px" height="400px">
                 <style type="text/css">

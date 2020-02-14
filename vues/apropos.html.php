@@ -1,6 +1,7 @@
         <div class="container">
             <section class="texte">
-                <p>Mes projets vous ont plu, n'hésitez pas à me contacter pour tout projet, collaboration ou tout simplement pour en savoir plus sur mon profil.</p>
+                <p>Après avoir développé ma créativité en travaillant de le design textile, je me suis passionnée pour l'intégration web. Je suis aujourd'hui finissante en Technique d'Intégration Multimédia</p>
+                <p>Mes projets vous ont plu? N'hésitez pas à me contacter pour tout projet, collaboration ou tout simplement pour en savoir plus sur mon profil.</p>
             </section>
             <div class="fond"></div>
             <img class="image"src="./assets/nina.jpg" alt="Portrait de Femme avec ambiance bleuté">

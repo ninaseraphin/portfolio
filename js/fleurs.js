@@ -42,7 +42,7 @@ window.addEventListener("load", function(){
     }, "-=450")
 
 
-    var seekProgressEl = document.querySelector('.progress');
+    var seekProgressEl = document.querySelector('.slider');
     seekProgressEl.oninput = function() {
       flower.seek(flower.duration * (seekProgressEl.value / 100));
     };

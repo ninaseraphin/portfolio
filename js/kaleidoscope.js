@@ -7,6 +7,7 @@ var animation1= anime({
     easing:"linear",
     loop:true,
     direction:"alternate",
+    autoplay: false,
 });
 var animation2=anime({
     targets:"#motif-central",
@@ -14,6 +15,7 @@ var animation2=anime({
     duration:5000,
     easing:"linear",
     loop:true,
+    autoplay: false,
 });
 var animation3=anime({
     targets:" #motif-ext",
@@ -21,6 +23,7 @@ var animation3=anime({
     duration:5000,
     easing:"linear",
     loop:true,
+    autoplay: false,
 });
 var animation4=anime({
     targets:"#motif-central>g",
@@ -28,9 +31,8 @@ var animation4=anime({
     duration:2500,
     easing:"linear",
     loop:true,
+    autoplay: false,
 });
-
-
 
 document.querySelector('.button.play').addEventListener("click", function(){
     animation1.play();
