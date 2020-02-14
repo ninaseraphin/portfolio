@@ -1,5 +1,8 @@
-/* PAGE A PROPOS */
 
+/* ---VERSION DESKTOP---
+------------------------*/
+
+/*  GENERAL : gestion de la grille et de la hauteur du container */
 .container{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -9,7 +12,7 @@
     height: calc(100vh - 114px);
     width:100%;
 }
-/* TEXTE */
+/* SECTION TEXTE */
 .texte{
     grid-area: 5 / 4 /8 / 8;
     z-index:1;
@@ -19,12 +22,12 @@
     background-color:grey;
     grid-area: 3 / 2 /10 / 4;
 }
-/* FOND JAUNE */
+/* FOND COLORÉ */
 .fond{
     background-color:var(--color-jaune);
     grid-area: 1 / 3 /13 / 5;
 }
-/* SECTION CONTACT */
+/*  LIENS DE CONTACT */
 .contact{
     grid-area: 9 / 5 /12 / 7;
     z-index:1;
@@ -40,55 +43,65 @@
     margin-right: var(--space-small);
 }
 
+/* ---VERSION TELEPHONE---
+------------------------*/
 
-/* ADAPTATIF TELEPHONE */
 @media (max-width: 699px) {
+    /*  GENERAL :gestion de la grille et de la hauteur */
     .container{
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(8, 1fr);
         grid-gap: 20px;
         height: calc(100vh - 74px);
     }
+    /* TEXTE*/
     .texte{
         grid-area: 2 / 3 /5 / 8;
         z-index:1;
     }
+    /* IMAGE*/
     .image{
         grid-area: 5 / 1 /8 / 4;
     }
+    /* FOND COLORÉ*/
     .fond{
         background-color:var(--color-jaune);
         grid-area: 1 / 2 /9 / 5;
     }
+    /*PARTIE CONTACT */
     .contact{
         grid-area: 6 / 5 /9 / 8;
         z-index:1;
     }
 }
-
-/* ADAPTATIF TABLETTE SMALL */
-
+/* ---VERSION TABLETTES---
+------------------------*/
 @media (min-width:700px) and (max-width:859px){
+    /* TEXTE*/
     .texte{
         grid-area: 4 / 4 /8 / 8;
     }
 }
-
-/* ADAPTATIF TABLETTE */
+/* ---VERSION TABLETTE-BIG---
+------------------------*/
 @media (min-width:860px) and (max-width:1049px){
+    /*  GENERAL */
     .container{
         height: calc(100vh - 102px);
         grid-gap:20px;
     }
+    /* IMAGE */
     .image{
         grid-area: 3/1/10/4;
     }
+    /* SECTION CONTACT*/
     .contact{
         grid-area: 9 / 5 /13 / 7;
     }
 }
-/* ADAPTATIF TABLETTE GRANDE */
+
 @media (min-width:1050px) and (max-width:1199px){
+    /*  GENERAL */
     .container{
         height: calc(100vh - 106px);
     }

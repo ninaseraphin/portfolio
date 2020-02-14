@@ -1,25 +1,32 @@
 <?php
+/**
+ * Class IndexControlleur
+ *  
+ * Source : Jonathan Martel, projet APM
+ * 
+ * 
+ * 
+ * 
+ */
 
 class IndexControlleur extends Controlleur{
 	public $url_elements;
 	public $action;
-
+	/** 
+	 * Permet de détecter l'URL utilisée et d'afficher les vues en fonction
+	* @access public
+	*/
     public function doAction(){
 		$_GET['url'] = (isset($_GET['url']) ? $_GET['url'] : "");
 		$this->url_elements = explode('/', $_GET['url']);
 		// $this->parseIncomingParams();
 		$this->action = $this->url_elements[0]; 
-		
-		// echo ($this->url_elements[0]);
-
 
         switch($this->action){
 				case "projets":
 					$page="projets";
 					$proj = new ProjetsControlleur();
-					$proj->pageProjets();
-	
-					
+					$proj->pageProjets();	
                 break;              
                 
 				case "projet":
@@ -29,11 +36,9 @@ class IndexControlleur extends Controlleur{
 						$unProj->pageUnProjet($this->url_elements[1]);
 					}else{
 						$unProj->pageProjets();
-					}
-					
-
-				             
-                break;                  
+					}             
+				break;   
+				               
 				case "apropos":
 					$this->vue->afficherHeader("apropos");
 					$this->vue->afficherpageAPropos();  			             
@@ -45,10 +50,6 @@ class IndexControlleur extends Controlleur{
                 break;
         }    
 	}
-
-	
-
-
 }
 
 ?>

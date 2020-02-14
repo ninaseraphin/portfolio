@@ -1,7 +1,7 @@
 <?php
 /**
  * Class Projet
- * 
+ *  
  * @author Nina Seraphin
  * @version 1.0
  * 
@@ -18,7 +18,6 @@ class Projet extends Manager {
 	 * @access public
 	 * @return Array
 	 */
-
 	public function getListe() 
 	{
 		$res = Array();
@@ -32,9 +31,10 @@ class Projet extends Manager {
 		}
 		return $res;   
 	}
-		/**
-	 * Retourne la liste des médias reliés à un projet
+	/**
+	 * Retourne la liste des médias associés à un projet
 	 * @access public
+	 * @param Integer $IdProjet
 	 * @return Array
 	 */
 	public function getMedias($idProjet) 
@@ -51,8 +51,9 @@ class Projet extends Manager {
 		return $res;   
 	}
 	/**
-	 * Retourne la liste des compétences reliées à un projet
+	 * Retourne la liste des compétences associées à un projet
 	 * @access public
+	 * @param Integer $IdProjet
 	 * @return Array
 	 */
 	public function getCompetences($idProjet) 
@@ -71,6 +72,7 @@ class Projet extends Manager {
 	/**
 	 * Retourne les informations d'un projet
 	 * @access public
+	 * @param Integer $IdProjet
 	 * @return Array
 	 */
 	public function getProjet($idProjet) 
@@ -85,13 +87,5 @@ class Projet extends Manager {
 		}
 		return $res;   
 	}
-	
 }
-
-
-
-
-
-
-
 ?>

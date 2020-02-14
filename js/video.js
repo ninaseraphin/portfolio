@@ -8,12 +8,12 @@ window.addEventListener("load", function(){
     function resize(){
         console.log(video.src);
         console.log(window.innerWidth);
-        if(window.innerWidth < 800 && video.src !== "./assets/accueil-video-phone2.m4v" ){
-            video.setAttribute('src', "./assets/accueil-video-phone2.m4v");
+        if(window.innerWidth < 800 && video.src !== "./assets/accueil-video-phone.m4v" ){
+            video.setAttribute('src', "./assets/accueil-video-phone.m4v");
         }else{
-        if(window.innerWidth > 800 && video.src !== "./assets/accueil-video2.mp4" ){
+        if(window.innerWidth > 800 && video.src !== "./assets/accueil-video.mp4" ){
             console.log(video.src);
-            video.setAttribute('src', "./assets/accueil-video2.mp4");
+            video.setAttribute('src', "./assets/accueil-video.mp4");
         }
     }
     }

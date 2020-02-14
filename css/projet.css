@@ -1,79 +1,93 @@
-/*SPLIDER MORPH*/
-.slider {
-    -webkit-appearance: none;  
-    appearance: none;
-    width: 100%; 
-    height: 5px; 
-    background: lightgrey; 
-    outline: none; 
-    opacity: 0.7; 
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-  }
-  .slider:hover {
-    opacity: 1;
-  }
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
-    appearance: none;
-    width: 20px; 
-    height: 20px; 
-    background: var(--color-bleu); 
-    cursor: pointer;
-    border-radius: 10px;
-  }
-  .slider::-moz-range-thumb {
-    width: 20px; 
-    height: 20px; 
-    background: var(--color-bleu); 
-    cursor: pointer; 
-    border-radius: 10px;
-  }
+/* ---SECTION PROJET FIN D'ÉTUDES---*/
+/*  ELEMENT HTML : Cas particulier*/
 h3{
     text-transform: uppercase;
     font-size:24px;
     margin-bottom:var(--space-small);
 }
-.projetFinal{
-    width:100%;
-    background-color: white;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.projetFinal>section{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin : var(--spacedouble) 0;
-    min-height:50vh;
-    flex-direction: column;
-}
-.kaleidoscopeel{
-    flex-direction: row!important;
-}
-.secButton{
-    min-width:50%;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.button{
-    min-width:100px;
-    height:50px;
-    background-color: #457398;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin: var(--space-small);
-    padding: 0 var(--space-small);
-}
-.button p{
-    color: white;
+
+/* STRUCTURE PAGE GENERALE*/
+html{
+    scroll-behavior: smooth; /* Pour clic sur flèche retour en haut*/
 }
 
+.container{
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*CONTAINER UN PROJET*/
+.un-projet-container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-gap: 20px 50px;
+    align-content: stretch;
+    height: calc(95vh - 114px);
+    width:100%;
+}
+/* SOUS CONTAINER UN PROJET*/
+.un-projet{
+    grid-area: 3 / 2 / 11 / 8;
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap:20px 50px;
+    width:100%;
+}
+/* EMPLACEMENT DU CONTENU */
+.contenu{
+    grid-area: 1 / 2 / 9 / 7;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    background-color: white;
+}
+/* TEXTES */
+.texte{
+    grid-area: 2 / 2 / 8 / 6;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+/* IMAGE REPRéSENTANT LE PROJET */
+.image{
+    background-color:grey;
+    grid-area: 2 / 1 / 8 / 3;
+}
+/* DESCRIPTION DU PROJET */
+.description{
+    margin-right:20px;
+}
+/* SECTION PROPS CAS GÉNÉRAL : Année, contexte, Type*/
+.props{
+    display:flex;
+    justify-content: space-around;
+    background-color: var(--color-bleu);
+    width:100%;
+}
+/* BLOC PAR INFO*/
+.proprietes{
+    margin: 50px 0;
+}
+/* TITRES */
+.titre-props{
+    color: var(--color-vert);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom:var(--space-base);
+}
+/* TEXTES */
+.reponse{
+    color: white;
+    text-transform: capitalize;   
+}
+
+/* CAS PARTICULIER : Si fond de couleur du projet = bleue, couleur de fond et de textes modifiées */
 .props.blanc{
     background-color:var(--color-vert)!important;
 }
@@ -81,55 +95,49 @@ h3{
     color:var(--color-bleu)!important;
 }
 
-.gamme-couleur{
-    display: flex;
-}
-.swatch{
-    width: 50px;
-    height: 50px;
-    margin:5px;
-}
-
-
-
-@media  (max-width:699px){
-    .morphing svg{
-        width:350px!important;
-        height: 350px!important;
-    }
-    .path svg{
-        width:300px!important;
-    }
-    .kaleidoscopeel{
-        flex-direction: column!important;
-    }
-    .kaleidoscopeel svg{
-        width:300px!important;
-        height:300px!important;
-    }
-}
-
-/*IMAGES*/
-.image img{
-    object-fit: cover;
+/* IMAGES DU PROJET : PLEIN ÉCRAN */
+.image-projet{
     width:100%;
-    height:100%;
-}
-.illu{
+    height: 750px;
+    background-color: grey;
     margin:var(--space-base) 0;
 }
-/*COMPETENCES*/
+/* IMAGES PLUS PETITES*/
+.small{
+    width:80%;
+}
+
+/* SECTION RETOUR: flèche vers le haut*/
+.retour{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:var(--space-base);
+}
+.fleche-retour{
+    transform-origin: 50% 100%;
+    transform: scaleY(1);
+}
+/* effet de hover*/
+.fleche-retour:hover{
+    transform: scaleY(1.1);
+    transition: transform 200ms;
+}
+
+
+/* SECTION COMPETENCES*/
 .competences{
     display:flex;
 }
 .competences .reponse{
     padding-right:var(--space-base);
 }
-/* BEFORE/AFTER */
 
+/* FLECHES PROJET SUIVANT/PRÉCÉDENT */
 .navProjet.show{
     transform: scaleX(1);
 }
+/* SECTION CONTENANT LES FLECHES*/
 .autresProjets{
     width:100%;
     display: flex;
@@ -157,124 +165,141 @@ h3{
 }
 .fleche-before{
     -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+    transform: scaleX(-1);
 }
+/* TEXTE AVEC LES FLECHES */
 .legende{
     color: black;
     font-size:14px;
 }
-/* STRUCTURE PAGE */
-html{
-    scroll-behavior: smooth;
-}
-.container{
-    padding-bottom: 25px;
-    display: flex;
+
+
+
+/* ----CAS PARTICULIER : MISE EN PAGE SECTION projet final----*/
+.projetFinal{
+    width:100%;
+    background-color: white;
+    display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.un-projet-container{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-gap: 20px 50px;
-    align-content: stretch;
-    height: calc(95vh - 114px);
-    width:100%;
+/* SOUS SECTIONS PROJET FINAL*/
+.projetFinal>section{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin : var(--spacedouble) 0;
+    min-height:50vh;
+    flex-direction: column;
+}
+/* CAS PARTICULIER SOUS SECTION */
+.kaleidoscopeel{
+    flex-direction: row!important;
 }
 
-.un-projet{
-    grid-area: 3 / 2 / 11 / 8;
-    display:grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    grid-gap:20px 50px;
-    width:100%;
+/* SECTION MORPHING SVG*/
+/* Style du slider: source W3school */
+.slider {
+    -webkit-appearance: none;  
+    appearance: none;
+    width: 100%; 
+    height: 5px; 
+    background: lightgrey; 
+    outline: none; 
+    opacity: 0.7; 
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  .slider:hover {
+    opacity: 1;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; 
+    height: 20px; 
+    background: var(--color-bleu); 
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .slider::-moz-range-thumb {
+    width: 20px; 
+    height: 20px; 
+    background: var(--color-bleu); 
+    cursor: pointer; 
+    border-radius: 10px;
+  }
+/* SECTION CHANGEMENT DE COULEURS */
+.gamme-couleur{
+    display: flex;
 }
-.contenu{
-    grid-area: 1 / 2 / 9 / 7;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    background-color: white;
+.swatch{
+    width: 50px;
+    height: 50px;
+    margin:5px;
 }
-.texte{
-    grid-area: 2 / 2 / 8 / 6;
+/* SECTION KALEIDOSCOPE*/
+/* SECTION BOUTONS */
+.secButton{
+    min-width:50%;
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
 }
-.image{
-    background-color:grey;
-    grid-area: 2 / 1 / 8 / 3;
-}
-.description{
-    margin-right:20px;
-}
-.props{
+/* BOUTONS */
+.button{
+    min-width:100px;
+    height:50px;
+    background-color: #457398;
     display:flex;
-    justify-content: space-around;
-    background-color: var(--color-bleu);
-    width:100%;
+    justify-content: center;
+    align-items: center;
+    margin: var(--space-small);
+    padding: 0 var(--space-small);
 }
-.titre-props{
-    color: var(--color-vert);
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom:var(--space-base);
-}
-.reponse{
+.button p{
     color: white;
-    text-transform: capitalize;   
 }
-.proprietes{
-    margin: 50px 0;
-}
-.image-projet{
+
+/*IMAGES*/
+.image img{
+    object-fit: cover;
     width:100%;
-    height: 750px;
-    background-color: grey;
+    height:100%;
+}
+.illu{
     margin:var(--space-base) 0;
 }
-.small{
-    width:80%;
-}
-.retour{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:var(--space-base);
-}
-.fleche-retour{
-    transform-origin: 50% 100%;
-    transform: scaleY(1);
-}
-.fleche-retour:hover{
-    transform: scaleY(1.1);
-    transition: transform 200ms;
-}
 
- @media (max-width: 699px) {
-     body{
-         position:relative;
-     }
-     .un-projet-container{
-         height: auto;
-     }
-    .image{
-        display:none;
+
+
+/* ---VERSION TELEPHONE---
+------------------------*/
+@media  (max-width:699px){
+    /* GÉNÉRAL */
+    body{
+        position:relative;
     }
-    .contenu{
-        grid-area: 1 / 1 / 9 / 7;
-        display:flex;
+    .un-projet-container{
+        height: auto;
     }
+    /* IMAGE PRÉSENTATION DU PROJET*/
+   .image{
+       display:none;
+   }
+   /* CONTENU SECTION PRESENTATION*/
+   .contenu{
+    grid-area: 1 / 1 / 9 / 7;
+    display:flex;
+    }
+    /* TEXTE PRESENTATION PROJET*/
     .texte{
         grid-area:none;
         padding: var(--space-base)
     }
+    /* SECTION PROPS */ 
     .reponse{
         font-size: 24px;
     }  
@@ -286,12 +311,15 @@ html{
         margin: var(--space-base) 0;
         text-align: center;
     }
+    /* IMAGES*/
     .small{
-        width:100%;
+        width:100%;/* Pour images toutes de la même taille*/
     }
+    /* ENLEVER FLECHE RETOUR*/
     .retour{
         display:none;
     }
+    /* SECTION NAVIGATION VERS AUTRES PROJETS */
     .autresProjets{
         width:100vw;
         position:relative;
@@ -301,21 +329,49 @@ html{
         width:50%;
         border-radius:0;
     }
+    /* AJout d'une border pour séparer les flèches*/
     .navProjet:nth-of-type(2){
         border-left: solid 1px black;
     }
+
+   /*--- CAS PARTICULIER : PROJET FINAL ---*/
+    /* SECTION MORPHING SVG : diminution taille SVGs*/
+    .morphing svg{
+        width:350px!important;
+        height: 350px!important;
+    }
+    /* SECTION PATH SVG : diminution taille SVGs*/
+    .path svg{
+        width:300px!important;
+    }
+    /* SECTION KALEIDOSCOPE : diminution taille SVGs+changement mise en page*/
+    .kaleidoscopeel{
+        flex-direction: column!important;
+    }
+    .kaleidoscopeel svg{
+        width:300px!important;
+        height:300px!important;
+    }
+
+
 }
+/* ---VERSION TABLETTES---
+------------------------*/
 @media (min-width:700px) and (max-width:1199px){
+    /* Changement grille et hauteur présentation projet*/
     .un-projet-container, .un-projet{
         grid-gap:20px;
         height: auto;
     }
+    /* SECTION PROPS*/
     .reponse{
         font-size: 26px;
     }  
 }
-
+/* ---VERSION GRANDS ÉCRANS---
+------------------------*/
 @media (min-width: 2000px) {
+    /*Limiter la largeur du container des projets*/
     .container{
         max-width:80%;
         margin:auto;

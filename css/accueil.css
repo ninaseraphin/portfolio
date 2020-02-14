@@ -8,7 +8,7 @@
 .hide{
     display:none;
 }
-/* HEADER*/
+/* HEADER */
 header{
     display:flex;
     justify-content: space-between; 
@@ -16,6 +16,7 @@ header{
     background-color: white;
     z-index:3;
 }
+/* NAVIGATION */
 .nav-desktop{
     display:flex;
     align-items: flex-end;
@@ -32,12 +33,14 @@ header{
 .nav-item{
     margin:0 2rem;
 }
-.en a{
+/* .en a{
     color:#1979AF;
-}
+} */
 .img-logo{
     height:50px;
 }
+
+/* ACCUEIL*/
 main{
     min-height:calc(100vh - 114px);
     display:flex!important;
@@ -48,7 +51,7 @@ video{
     width:100%;
 }
 
-/* HEADER ADAPTATIF*/
+/* ---HEADER ADAPTATIF ELEPHONE ---*/
  @media (max-width: 699px) {
     .nav-phone{
         display: flex;

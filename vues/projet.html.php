@@ -72,7 +72,7 @@
         <img class="fleche-retour" src="../assets/flecheretour.svg" style="height:50px">
     </section>
     <section class="autresProjets">
-        <a class="navProjet" href="<?php 
+        <a class="navProjet" href=<?php 
         switch($projet["Id"]){
             case 1 :
                 $projetBefore= 8;
@@ -86,7 +86,7 @@
                 $projetBefore= $projet["Id"]-1;
                 $projetAfter= $projet["Id"]+1;
         }
-        echo ($projetBefore);?>">
+        echo ('"/projet/'.$projetBefore.'"');?>>
        <p class="legende">Précédent</p> <svg class="flechesvg fleche-before" width="54" height="19" viewBox="0 0 54 19" fill="none">
 <path d="M0 9H52" stroke-width="2"/>
 <path d="M52.5 9.5L44 1"  stroke-width="2"/>
@@ -94,7 +94,7 @@
 </svg>
 </a>
         
-        <a class ="navProjet" href="<?php echo ($projetAfter);?>"><p class="legende">Suivant</p><svg class="flechesvg"width="54" height="19" viewBox="0 0 54 19" fill="none">
+        <a class ="navProjet" href=<?php echo ("'/projet/".$projetAfter."'");?>><p class="legende">Suivant</p><svg class="flechesvg"width="54" height="19" viewBox="0 0 54 19" fill="none">
 <path d="M0 9H52" stroke-width="2"/>
 <path d="M52.5 9.5L44 1"  stroke-width="2"/>
 <path d="M52.5 9L44 17.5"  stroke-width="2"/>

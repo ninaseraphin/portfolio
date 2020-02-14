@@ -1,17 +1,10 @@
-/* ANIMATION D'INTRODUCTION */
+/* CSS POUR L'ANIMATION D'INTRO page accueil*/
 
 body{
     margin:0;
-    position:relative;
+    position:relative; /* Pour div animation en plein écran*/
 }
-/* SECTION INTRO*/
-.intro{
-    position:fixed;
-    top:0;
-    z-index:15;
-    min-width:100%;
-}
-/* NOM Nina Seraphin*/
+/* Style du NOM*/
 .nom-intro{
     font-family: 'Poppins', sans-serif;
     font-weight:600;
@@ -23,15 +16,22 @@ body{
     transform-origin: 0 0;
     color:white
 }
-/* FOND COULEUR */
+/* FOND COLORÉ ANIMÉ*/
 .fond-colore{
-    width:100%;
-    height:100vh;
-    background-color: #EF5942;
-    transform-origin: 0 0;
-    transform: scaleX(0);
+    width:100%; /* Fond de toute la largeur de l'écran*/
+    height:100vh;/* Fond de toute la hauteur de l'écran*/
+    background-color: var(--color-corail); /* Couleur Corail*/
+    transform-origin: 0 0; /* Pour que l'animation parte de la gauche de l'écran*/
+    transform: scaleX(0);/* Scale de départ de l'animation */
 }
-/* ADAPTATIF TELEPHONE*/
+/* PLACEMENT DE L'ANIMATION */
+.intro{
+    position:fixed;/* Positionner l'intro sur tout l'écran*/
+    top:0; /* Départ du haut de l'écran*/
+    z-index:15;/* Pour passage par dessus barre de navigation */
+    min-width:100%;
+}
+
 @media (max-width: 699px){
     .nom-intro{
         font-size: 4em;

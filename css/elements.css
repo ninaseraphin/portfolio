@@ -1,10 +1,12 @@
+/* REGLES GENERALES SUR ELEMENTS HTML POUR TOUT LE SITE */ 
+
 html{
     min-height:100%;
 }
 ul{
     list-style-type: none;
 }
-/* TEXTES */
+/* TEXTES : taille/police */
 p,a,h1,h2,h3,span, li{
     font-family:'Poppins', sans-serif; 
 }
@@ -24,9 +26,24 @@ li{
     font-size: 18px;
 }
 
-/* TEXTES ADAPTATIF */
 
-/* ADAPTATIF TELEPHONE */
+/* COULEURS ARRIERE PLAN*/
+.corail{
+    background-color: var(--color-corail)!important;
+}
+.bleu{
+    background-color: var(--color-bleu)!important;
+}
+.rose{
+    background-color: var(--color-rose)!important;
+}
+.vert{
+    background-color: var(--color-vert)!important;
+}
+.jaune{
+    background-color: var(--color-jaune)!important;
+}
+
 @media (max-width: 699px) {
     h1,h2{
         font-size: 44px;
@@ -46,22 +63,3 @@ li{
         font-size: 16px;
     }
 }
-
-/* COULEURS ARRIERE PLAN*/
-.corail{
-    background-color: var(--color-corail)!important;
-}
-.bleu{
-    background-color: var(--color-bleu)!important;
-}
-.rose{
-    background-color: var(--color-rose)!important;
-}
-.vert{
-    background-color: var(--color-vert)!important;
-}
-.jaune{
-    background-color: var(--color-jaune)!important;
-}
-
-
